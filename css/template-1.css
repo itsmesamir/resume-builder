@@ -1,0 +1,141 @@
+.template-wrapper {
+    width: 815px;
+    height: 100%;
+    color: #fff;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.header-wrapper {
+    background: #efa71d;
+}
+
+.template-container {
+    width: 90%;
+    border: 2px solid blue;
+    margin: 0 auto;
+}
+
+.header-content {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+}
+
+.header-content .profile-img img {
+    width: 245px;
+    height: 245px;
+    object-fit: cover;
+}
+
+.summary-content p {
+    font-size: 13px;
+}
+
+.down-wrapper {
+    background: #26303a;
+    padding: 25px auto;
+}
+
+.down-wrapper .template-container .down-wrapper-content {
+    display: flex;
+    gap: 70px;
+}
+
+.profile-title {
+    background: #efa71d;
+    margin: 60px auto 40px -40px;
+    padding: 15px 40px;
+}
+
+.col-left {
+    width: 40%;
+}
+
+.col-left .profile-title .profile-name {
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.col-left .profile-title .profile-job-title {
+    letter-spacing: 1px;
+}
+
+
+/* profile contact details  */
+
+.profile-contact-details {
+    margin: 50px auto;
+}
+
+.profile-contact-details .profile-contact-details-content {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    margin: 15px auto;
+}
+
+.contact-icon i {
+    color: #efa71d;
+    font-size: 15px;
+}
+
+.contact-details-text p {
+    display: flex;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/* languages technologies section  */
+
+.resume-section {
+    margin: 50px 0;
+}
+
+.resume-section-title {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.resume-section-title i {
+    font-size: 20px;
+    color: #efa71d;
+}
+
+.resume-section-title h2 {
+    margin-top: -8px;
+    letter-spacing: 0.8px;
+}
+
+.horizontal-line {
+    height: 1px;
+    width: 100%;
+    margin-top: 5px;
+    background: #e0e0e0;
+}
+
+.resume-section-content {
+    margin-top: 20px;
+}
+
+.resume-section-content h3 {
+    letter-spacing: 0.8px;
+}
+
+.resume-section-content .resume-section-description p {
+    font-size: 14px;
+    padding-top: 5px;
+    letter-spacing: 0.8px;
+}
