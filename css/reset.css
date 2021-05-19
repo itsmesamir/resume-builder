@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 14px; */
+    /* font-weight: 400; */
+}
+
+.header-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.txt-color {
+    color: #1C1D1D;
+}
+
+.primary-color {
+    color: #F0474A;
+}
+
+.secondary-color {
+    color: #FDAF19;
+}
+
+.clr {
+    clear: both;
+}
+
+.transition {
+    border: 2px solid red;
+    transition: transform 0.3s ease-in-out;
+}

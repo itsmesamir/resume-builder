@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumaker</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@100;200;300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="front-page-container">
+            <div class="front-page-content">
+                <div class="logo"><img src="./images/logo-black.png" alt="logo"></div>
+                <div class="intro-txt">
+                    <h1>Make a Resume -- Quick & Easy</h1>
+                </div>
+                <div class="create-btn">
+                    <a href="#">CREATE MY RESUME NOW</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="slider-logo">
+                <img src="./images/logo-black.png" alt="logo">
+            </div>
+            <div class="wizard-indicator">
+                <div class="progress-bar">
+                    <div class="step">
+                        <h3>Select Template</h3>
+                        <div class="bullet">
+                            <span>1</span>
+                        </div>
+                        <div class="check fas fa-check"></div>
+                    </div>
+                    <div class="step">
+                        <h3>Contacts Information</h3>
+                        <div class="bullet">
+                            <span>2</span>
+                        </div>
+                        <div class="check fas fa-check"></div>
+                    </div>
+                    <div class="step">
+                        <h3>Experience Level</h3>
+                        <div class="bullet">
+                            <span>3</span>
+                        </div>
+                        <div class="check fas fa-check"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-content">
+                <div class="template-container slider-page">
+                    <div class="description-header">
+                        <div class="desc-title">
+                            <h1>SELECT YOUR TEMPLATE</h1>
+                        </div>
+                    </div>
+                    <div class="template-img">
+                        <div class="first-template">
+                            <img src="./images/resume-template-1.png" alt="resume template">
+                            <div class="template-title">
+                                <h2>Template One</h2>
+                            </div>
+                            <div class="select-btn template-btn-1"><a href="#">Use this template</a></div>
+                        </div>
+                        <div class="second-template">
+                            <img src="./images/resume-template-1.png" alt="resume template">
+                            <div class="template-title">
+                                <h2>Template Two</h2>
+                            </div>
+                            <div class="select-btn template-btn-2"><a href="#">Use this template</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-information">
+                    <div class="form-outer">
+                        <form action="#">
+                            <div class="page">
+                                <div class="description-header">
+                                    <div class="desc-title">
+                                        <h1>Contact Information</h1>
+                                    </div>
+                                    <div class="desc-subtitle">
+                                        <h4>Include your first and last name and at least one way for employee to reach you</h4>
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <div class="label">Resume name</div>
+                                    <input type="text" placeholder="Resume Name" name="Resume-name">
+                                </div>
+                                <div class="form-field">
+                                    <div class="label">First Name</div>
+                                    <input type="text" placeholder="First Name" name="First-name">
+                                </div>
+                                <div class="form-field">
+                                    <div class="label">Last Name</div>
+                                    <input type="text" placeholder="Last Name" name="Last-name">
+                                </div>
+                                <div class="form-field">
+                                    <div class="label">Email Address</div>
+                                    <input type="text" placeholder="Email Address" name="Email-address">
+                                </div>
+                                <div class="form-field">
+                                    <div class="label">Phone Number</div>
+                                    <input type="number" placeholder="Phone Number" name="Phone-number">
+                                </div>
+                                <div class="form-field btns">
+                                    <button class="prev-1 prev">Previous</button>
+                                    <button class="next-1 next">Next</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="experience-section">
+                    <div class="description-header">
+                        <div class="desc-title">
+                            <h1>Select your Experience Level</h1>
+                        </div>
+                    </div>
+                    <div class="employee-type">
+                        <div class="junior">
+                            <div class="emp-icon"><i class="fas fa-user-graduate"></i></div>
+                            <div class="emp-title">Student/Junior</div>
+                            <div class="years"><span>0-2 Years</span></div>
+                        </div>
+                        <div class="senior">
+                            <div class="emp-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <div class="emp-title">Senior</div>
+                            <div class="years"><span>2-6 Years</span></div>
+                        </div>
+                        <div class="executive">
+                            <div class="emp-icon"><i class="fas fa-user-tie"></i></div>
+                            <div class="emp-title">Executive</div>
+                            <div class="years"><span>+6 Years</span></div>
+                        </div>
+                    </div>
+                    <div class="form-field btns">
+                        <button class="prev-2 prev">Previous</button>
+                        <button class="next-2 next">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/14b6efa822.js" crossorigin="anonymous"></script>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>
