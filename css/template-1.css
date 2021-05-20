@@ -3,21 +3,22 @@
     height: 100%;
     color: #fff;
     margin: 0 auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .header-wrapper {
     background: #efa71d;
+    padding: 5px 0;
 }
 
 .template-container {
     width: 90%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin: 0 auto;
 }
 
 .header-content {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
     gap: 70px;
@@ -106,7 +107,7 @@
 .resume-section-title {
     display: flex;
     gap: 10px;
-    justify-content: center;
+    justify-content: left;
 }
 
 .resume-section-title i {
@@ -130,7 +131,10 @@
     margin-top: 20px;
 }
 
-.resume-section-content h3 {
+.resume-section-content .resume-section-topic span {
+    color: #efa71d;
+    font-weight: bold;
+    font-size: 18px;
     letter-spacing: 0.8px;
 }
 
@@ -138,4 +142,168 @@
     font-size: 14px;
     padding-top: 5px;
     letter-spacing: 0.8px;
+}
+
+
+/* work experience and education section  */
+
+.resume-section-list-tile {
+    margin-top: 20px;
+}
+
+.list-tile-title {
+    color: #efa71d;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.list-tile-subtitle {
+    font-weight: bold;
+}
+
+.list-tile-date-address {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.list-tile-description {
+    /* margin-top: 15px; */
+    margin-left: 25px;
+    font-size: 13px;
+}
+
+.list-tile-description ul li {
+    padding-top: 15px;
+}
+
+
+/* skills section  */
+
+.skills-section-content {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-section-content .skills-name {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.skills-section-content .skills-rating .checked {
+    color: #efa71d;
+}
+
+
+/* personal skills section  */
+
+.personal-skills-section-content {
+    margin-top: 15px;
+}
+
+.personal-skills-section-content .personal-skills-name {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* background of progress */
+
+.personal-skills-progress progress {
+    width: 100%;
+    height: 7px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+}
+
+.personal-skills-progress {
+    margin-top: -5px;
+}
+
+.personal-skills-progress progress::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+/* value of progress  */
+
+.personal-skills-progress progress::-webkit-progress-value {
+    border-radius: 25px;
+    background-color: #efa71d !important;
+}
+
+.personal-skills-progress progress::-moz-progress-bar {
+    border-radius: 25px;
+    background-color: #efa71d !important;
+}
+
+.personal-skills-progress progress {
+    color: #efa71d;
+}
+
+
+/* languages section  */
+
+.languages-section-content {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.languages-section-content .languages-name {
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.languages-section-content .languages-rating .checked {
+    color: #efa71d;
+}
+
+
+/* hobbies  */
+
+.hobbies-section-content ul {
+    margin-left: 15px;
+}
+
+.hobbies-section-content ul li {
+    padding-top: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+/* references  */
+
+.reference-person {
+    color: #efa71d;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.reference-description p {
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.reference-position,
+.reference-company {
+    letter-spacing: 0.6px;
+}
+
+.reference-contact,
+.reference-email {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 2px 0;
+    letter-spacing: 1px;
 }
