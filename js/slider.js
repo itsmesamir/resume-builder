@@ -1,16 +1,27 @@
+const frontPageContainer = document.querySelector('.front-page-container');
+const createBtn = document.querySelector('.create-btn');
+
+const sliderContainer = document.querySelector('.slider-container');
 const sliderPage = document.querySelector('.slider-page');
 const templateBtnFirst = document.querySelector('.template-btn-1');
 const templateBtnSecond = document.querySelector('.template-btn-2');
+
 const contactPrev = document.querySelector('.prev-1');
 const contactNext = document.querySelector('.next-1');
+
+const contactInformation = document.querySelector('.contact-information');
 const expPrev = document.querySelector('.prev-2');
 const expNext = document.querySelector('.next-2');
-const contactInformation = document.querySelector('.contact-information');
 
 const progressText = document.querySelectorAll(".step h3");
 const progressBullet = document.querySelectorAll(".step .bullet");
 const progressCheck = document.querySelectorAll(".step .check");
 let current = 1;
+
+createBtn.addEventListener('click', function() {
+    frontPageContainer.style.display = 'none';
+    sliderContainer.style.display = 'block';
+})
 
 templateBtnFirst.addEventListener("click", function(event) {
     event.preventDefault();

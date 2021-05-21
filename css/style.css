@@ -8,7 +8,7 @@
     margin: 60px auto;
     text-align: center;
     box-shadow: 5px 5px 10px #888888;
-    display: none;
+    /* display: none; */
 }
 
 .front-page-content {
@@ -50,7 +50,7 @@
     height: auto;
     flex-direction: column;
     margin-top: 20px;
-    /* margin: 50px; */
+    display: none;
 }
 
 .slider-container>div {
