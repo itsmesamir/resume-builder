@@ -15,12 +15,26 @@
 let sections = document.querySelectorAll('.resume-section');
 let lists1 = document.querySelectorAll('.section-list');
 
-localStorage.setItem('listsss', lists1);
-let listss = localStorage.getItem('listsss');
-debugger
-console.log(listss);
+let printBtn = document.querySelector('#print');
+
+// let secArr = Array.from(sections);
+// let blank = [];
+// let hello = [];
+// secArr.forEach(section => {
+//         blank.push(section.innerHtml)
+//         localStorage.setItem('sec', blank);
+//         hello.push(localStorage.getItem('sec'));
+//         // debugger
+//     })
+// localStorage.setItem('listsss);
+// console.log(sections);
+
+// let sect = localStorage.getItem('listsss');
+// debugger
+// console.log(secArr);
 
 sections.forEach((section) => {
+    section.setAttribute('draggable', 'true');
     registerEventsOnsection(section);
 });
 
@@ -76,3 +90,7 @@ function getsectionAfterDraggingsection(list, yDraggingsection) {
     }).element;
 
 }
+
+printBtn.addEventListener('click', () => {
+    window.print();
+})

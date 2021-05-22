@@ -1,9 +1,17 @@
-let sections = document.querySelectorAll('.resume-section');
+let sectionss = document.querySelectorAll('.resume-section');
 let lists1 = document.querySelectorAll('.section-list');
 
-// localStorage.setItem('listsss', JSON.stringify(lists1));
-// let listss = JSON.parse(localStorage.getItem('listsss'));
-// console.log(lists1);
+let sect = [];
+
+sectionss.forEach(section => {
+        sect.push(section);
+    })
+    // localStorage.setItem('listsss', JSON.stringify(lists1));
+    // let listss = JSON.parse(localStorage.getItem('listsss'));
+    // console.log(lists1);
+localStorage.setItem('section', sectionss.innerHTML);
+let sections = window.localStorage.getItem('section');
+console.log(sections);
 
 sections.forEach((section) => {
     registerEventsOnsection(section);

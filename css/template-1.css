@@ -283,7 +283,11 @@
 /* hobbies  */
 
 .hobbies-section-content ul {
-    margin-left: 15px;
+    margin-left: 25px;
+}
+
+.hobbies-name {
+    margin-left: 25px;
 }
 
 .hobbies-section-content ul li {
@@ -322,4 +326,36 @@
 
 .dragging {
     opacity: 0.5;
+}
+
+.print-btn {
+    margin-left: 30%;
+}
+
+.print-btn button {
+    background: #e7423c;
+    height: auto;
+    width: fit-content;
+    margin: 20px 0;
+    padding: 15px 35px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    /* transition: 0.5ms; */
+    border-radius: 5px;
+}
+
+.print-btn button:hover {
+    background-color: #df9712;
+}
+
+@media print {
+    .header-wrapper {
+        background: #efa71d !important;
+        padding: 5px 0;
+    }
+    .print-btn {
+        visibility: hidden;
+    }
 }
