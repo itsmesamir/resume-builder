@@ -68,6 +68,13 @@
     letter-spacing: 1px;
 }
 
+.blank-section {
+    height: 10px;
+    display: flex;
+    flex: 1;
+    width: 400px;
+}
+
 
 /* profile contact details  */
 
@@ -101,7 +108,12 @@
 /* languages technologies section  */
 
 .resume-section {
+    cursor: move;
     margin: 50px 0;
+}
+
+.section-list {
+    height: 100%;
 }
 
 .resume-section-title {
@@ -306,4 +318,8 @@
     font-weight: 500;
     padding: 2px 0;
     letter-spacing: 1px;
+}
+
+.dragging {
+    opacity: 0.5;
 }
