@@ -46,6 +46,10 @@
     text-align: center;
 }
 
+.template-style .form-row label {
+    user-select: none;
+}
+
 .change-template-container {
     width: 80%;
     margin: 0 auto;
@@ -531,7 +535,7 @@
     .header-wrapper {
         padding: 5px 0;
     }
-    .print-btn {
-        visibility: hidden;
+    .style-wrapper {
+        display: none;
     }
 }

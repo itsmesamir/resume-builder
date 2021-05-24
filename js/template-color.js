@@ -74,11 +74,16 @@ const init = () => {
     let activeColorBg = localStorage.getItem('active-color-bg');
     let activeColorTxt = localStorage.getItem('active-color-txt');
     let activeCBlock = localStorage.getItem('color-active-block');
-    colorBlock.forEach(block => {
-        if (block.id == activeCBlock) {
-            block.classList.add('active-color-block');
-        }
-    })
+    if (activeCBlock) {
+
+        colorBlock.forEach(block => {
+            if (block.id == activeCBlock) {
+                block.classList.add('active-color-block');
+            }
+        })
+    } else {
+        colorBlock[6].classList.add('color-active-block');
+    }
     if (activeColorBg) headerWrapper.classList.add(activeColorBg)
     if (activeColorBg) profileTitle.classList.add(activeColorBg);
     if (activeColorBg) progress.forEach(p => p.classList.add(activeColorBg))
