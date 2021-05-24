@@ -1,0 +1,183 @@
+.darkOrange-bg {
+    background: #efa71d;
+}
+
+.darkOrange-txt {
+    color: #efa71d;
+}
+
+.crimson-bg {
+    background: #ff005c;
+}
+
+.crimson-txt {
+    color: #ff005c;
+}
+
+.saddlebrown-bg {
+    background: #813d32;
+}
+
+.saddlebrown-txt {
+    color: #c72d16;
+}
+
+.darkslategray-bg {
+    background: #153f4d;
+}
+
+.darkslategray-txt {
+    color: #153f4d;
+}
+
+.darkslategreen-bg {
+    background: #006d51;
+}
+
+.darkslategreen-txt {
+    color: #006d51;
+}
+
+.darkslateblue-bg {
+    background: #143d5d;
+}
+
+.darkslateblue-txt {
+    color: #143d5d;
+}
+
+.indigo-bg {
+    background: #590055;
+}
+
+.indigo-txt {
+    color: #590055;
+}
+
+.indianred-bg {
+    background: #e65050;
+}
+
+.indianred-txt {
+    color: #e65050;
+}
+
+.tomato-bg {
+    background: #eb5352;
+}
+
+.tomato-txt {
+    color: #eb5352;
+}
+
+.darkgold-bg {
+    background: #bb7f0f;
+}
+
+.darkgold-txt {
+    color: #bb7f0f;
+}
+
+.black-bg {
+    background: #000;
+}
+
+.black-txt {
+    color: #000;
+}
+
+.gray-bg {
+    background: #7d8389;
+}
+
+.gray-txt {
+    color: #7d8389;
+}
+
+.grayblack-bg {
+    background: #26303a;
+}
+
+.grayblack-txt {
+    color: #26303a;
+}
+
+.red-bg {
+    background: #d81717;
+}
+
+.red-txt {
+    color: #eb0202;
+}
+
+.royalblue-bg {
+    background: #2d82d8;
+}
+
+.royalblue-txt {
+    color: #2d82d8;
+}
+
+progress.royalblue-bg::-moz-progress-bar {
+    background: #2d82d8 !important;
+}
+
+progress.royalblue-bg::-webkit-progress-value {
+    background: #2d82d8 !important;
+}
+
+progress.darkgold-bg::-moz-progress-bar {
+    background: #bb7f0f !important;
+}
+
+progress.darkgold-bg::-webkit-progress-value {
+    background: #bb7f0f !important;
+}
+
+progress.darkslategreen-bg::-moz-progress-bar {
+    background: #305d52 !important;
+}
+
+progress.darkslategreen-bg::-webkit-progress-value {
+    background: #305d52 !important;
+}
+
+progress.indianred-bg::-moz-progress-bar {
+    background: #e65050 !important;
+}
+
+progress.indianred-bg::-webkit-progress-value {
+    background: #e65050 !important;
+}
+
+progress.crimson-bg::-moz-progress-bar {
+    background: #813d32 !important;
+}
+
+progress.crimson-bg::-webkit-progress-value {
+    background: #813d32 !important;
+}
+
+progress.darkOrange-bg::-moz-progress-bar {
+    background: #efa71d !important;
+}
+
+progress.darkOrange-bg::-webkit-progress-value {
+    background: #efa71d !important;
+}
+
+progress.saddlebrown-bg::-moz-progress-bar {
+    background: #813d32 !important;
+}
+
+progress.saddlebrown-bg::-webkit-progress-value {
+    background: #813d32 !important;
+}
+
+progress.darkslategray-bg::-moz-progress-bar {
+    background: #bb7f0f !important;
+}
+
+progress.darkslategray-bg::-webkit-progress-value {
+    background: #bb7f0f !important;
+}

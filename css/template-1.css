@@ -1,13 +1,189 @@
+.outer-wrapper {
+    display: flex;
+    margin: 25px;
+    justify-content: space-between;
+}
+
+.style-wrapper {
+    max-width: 35%;
+    flex: 1;
+}
+
+.style-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.style-wrapper .resume-customizer {
+    border: 1.2px solid #e6e6e6;
+    text-align: center;
+    box-shadow: 2px 2px 5px #888;
+    padding: 15px 0;
+}
+
+.style-wrapper .resume-customizer p {
+    font-size: 14px;
+}
+
+.style-wrapper .resume-customizer .love-gif img {
+    width: auto;
+    height: 100px;
+    margin: 5px 0;
+}
+
+.style-wrapper .resume-customizer h4>span {
+    color: #ff005c;
+}
+
+.template-style {
+    margin-top: 30px;
+    border: 1.2px solid #e6e6e6;
+    box-shadow: 2px 2px 5px #888;
+    padding: 15px 0;
+}
+
+.template-style h2 {
+    text-align: center;
+}
+
+.change-template-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.change-template-container>div {
+    padding: 3px 0;
+}
+
+
+/* class for js  */
+
+.hide-picture {
+    display: none;
+}
+
+.b-w-picture {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.hide-contact-icons {
+    display: none;
+}
+
+
+/* color section  */
+
+.color-style,
+.channel-column {
+    margin-top: 30px;
+    border: 1.2px solid #e6e6e6;
+    box-shadow: 2px 2px 5px #888;
+    padding: 15px 0;
+}
+
+.color-style h2,
+.channel-column h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.color-content {
+    max-width: 84%;
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.color-content .color-block {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    margin: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.active-color-block {
+    border: 2px solid #2d82d8;
+    border-radius: 5px;
+}
+
+.color-content .color-block .block-left {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.color-content .color-block .block-right {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    left: 35%;
+}
+
+
+/* layout style  */
+
+.channel-content {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.channel-column h3 {
+    text-align: center;
+}
+
+.channel-content {
+    padding: 15px 0;
+}
+
+.channel-content>div {
+    padding: 18px 10px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.channel-content .channel-name span {
+    font-weight: bold;
+}
+
+.channel-content i {
+    font-size: 30px;
+}
+
+.active-column {
+    border: 2px solid #2d82d8;
+    border-radius: 5px;
+    color: #ff005c;
+}
+
+
+/* template wrapper  */
+
 .template-wrapper {
-    width: 815px;
+    flex: 2;
+    max-width: 815px;
     height: 100%;
     color: #fff;
+    padding: 0 25px;
     margin: 0 auto;
     /* border: 2px solid red; */
 }
 
 .header-wrapper {
-    background: #efa71d;
+    /* background: #efa71d; */
     padding: 5px 0;
 }
 
@@ -48,7 +224,7 @@
 }
 
 .profile-title {
-    background: #efa71d;
+    /* background: #efa71d; */
     margin: 60px auto 40px -40px;
     padding: 15px 40px;
 }
@@ -91,7 +267,7 @@
 }
 
 .contact-icon i {
-    color: #efa71d;
+    /* color: #efa71d; */
     font-size: 15px;
 }
 
@@ -124,7 +300,7 @@
 
 .resume-section-title i {
     font-size: 20px;
-    color: #efa71d;
+    /* color: #efa71d; */
 }
 
 .resume-section-title h2 {
@@ -144,7 +320,7 @@
 }
 
 .resume-section-content .resume-section-topic span {
-    color: #efa71d;
+    /* color: #efa71d; */
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 0.8px;
@@ -164,7 +340,7 @@
 }
 
 .list-tile-title {
-    color: #efa71d;
+    /* color: #efa71d; */
     font-weight: bold;
     font-size: 18px;
 }
@@ -204,7 +380,7 @@
 }
 
 .skills-section-content .skills-rating .checked {
-    color: #efa71d;
+    /* color: #efa71d; */
 }
 
 
@@ -246,19 +422,20 @@
 
 /* value of progress  */
 
-.personal-skills-progress progress::-webkit-progress-value {
+
+/* .personal-skills-progress progress.progress::-webkit-progress-value {
     border-radius: 25px;
     background-color: #efa71d !important;
 }
 
-.personal-skills-progress progress::-moz-progress-bar {
+.personal-skills-progress progress.progress::-moz-progress-bar {
     border-radius: 25px;
     background-color: #efa71d !important;
 }
 
-.personal-skills-progress progress {
+.personal-skills-progress progress.progress {
     color: #efa71d;
-}
+} */
 
 
 /* languages section  */
@@ -276,7 +453,7 @@
 }
 
 .languages-section-content .languages-rating .checked {
-    color: #efa71d;
+    /* color: #efa71d; */
 }
 
 
@@ -300,7 +477,7 @@
 /* references  */
 
 .reference-person {
-    color: #efa71d;
+    /* color: #efa71d; */
     font-size: 19px;
     letter-spacing: 1px;
 }
@@ -329,7 +506,7 @@
 }
 
 .print-btn {
-    margin-left: 30%;
+    text-align: right;
 }
 
 .print-btn button {
@@ -352,7 +529,6 @@
 
 @media print {
     .header-wrapper {
-        background: #efa71d !important;
         padding: 5px 0;
     }
     .print-btn {
