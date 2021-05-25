@@ -2,6 +2,7 @@ const marginRange = document.getElementById("margin-range");
 const marginRangeLength = document.getElementById('margin-range-length');
 
 const templateContainer = document.querySelectorAll('.template-container');
+const templateContainerSecond = document.querySelector('.template-container-second');
 
 marginRange.addEventListener('input', () => {
     marginRangeLength.innerHTML = '';
@@ -11,9 +12,9 @@ marginRange.addEventListener('input', () => {
 });
 
 const changeMargin = (value) => {
-    templateContainer[0].style.paddingTop = (parseInt(value) * 5) + 'px';
-    templateContainer[1].style.paddingBottom = (parseInt(value) * 5) + 'px';
-
+    if (templateContainer[0]) templateContainer[0].style.paddingTop = (parseInt(value) * 5) + 'px';
+    if (templateContainer[1]) templateContainer[1].style.paddingBottom = (parseInt(value) * 5) + 'px';
+    if (templateContainerSecond) templateContainerSecond.style.padding = (parseInt(value) * 10) + 'px';
     templateContainer.forEach(container => {
         container.style.paddingLeft = (parseInt(value) * 10) + 'px';
         container.style.paddingRight = (parseInt(value) * 10) + 'px';

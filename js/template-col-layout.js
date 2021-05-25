@@ -3,11 +3,13 @@ const doubleChannel = document.querySelector('.two-channel');
 
 const headerContent = document.querySelector('.header-content');
 const downWrapperContent = document.querySelector('.down-wrapper-content');
+const wrapperContentSecond = document.querySelector('.wrapper-content-second');
 
 
 const editColumnLayout = (display) => {
-    headerContent.style.display = `${display}`;
-    downWrapperContent.style.display = `${display}`;
+    if (headerContent) headerContent.style.display = `${display}`;
+    if (downWrapperContent) downWrapperContent.style.display = `${display}`;
+    if (wrapperContentSecond) wrapperContentSecond.style.display = `${display}`;
 }
 
 singleChannel.addEventListener('click', () => {

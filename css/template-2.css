@@ -1,20 +1,232 @@
+.outer-wrapper {
+    display: flex;
+    margin: 25px;
+    justify-content: space-between;
+}
+
+.style-wrapper {
+    max-width: 35%;
+    flex: 1;
+}
+
+.style-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.style-wrapper .resume-customizer {
+    border: 1.2px solid #e6e6e6;
+    text-align: center;
+    box-shadow: 2px 2px 5px #888;
+    padding: 15px 0;
+}
+
+.style-wrapper .resume-customizer p {
+    font-size: 14px;
+}
+
+.style-wrapper .resume-customizer .love-gif img {
+    width: auto;
+    height: 100px;
+    margin: 5px 0;
+}
+
+.style-wrapper .resume-customizer h4>span {
+    color: #ff005c;
+}
+
+.template-style {
+    margin-top: 30px;
+    border: 1.2px solid #e6e6e6;
+    box-shadow: 2px 2px 5px #888;
+    padding: 15px 0;
+}
+
+.template-style h2 {
+    text-align: center;
+}
+
+.template-style .form-row label {
+    user-select: none;
+}
+
+.change-template-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.change-template-container>div {
+    padding: 3px 0;
+}
+
+
+/* class for js  */
+
+.hide-picture {
+    display: none;
+}
+
+.b-w-picture {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.hide-contact-icons {
+    display: none;
+}
+
+
+/* color section  */
+
+.color-style,
+.channel-column,
+.font-style {
+    margin-top: 30px;
+    border: 1.2px solid #e6e6e6;
+    box-shadow: 2px 2px 5px #888;
+    padding: 25px 0;
+}
+
+.color-style h2,
+.channel-column h2,
+.font-style h2 {
+    text-align: center;
+    margin: 15px;
+}
+
+.color-content {
+    max-width: 84%;
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.color-content .color-block {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    margin: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.active-color-block {
+    border: 2px solid #2d82d8;
+    border-radius: 5px;
+}
+
+.color-content .color-block .block-left {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.color-content .color-block .block-right {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    left: 35%;
+}
+
+
+/* layout style  */
+
+.channel-content {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.channel-column h3 {
+    text-align: center;
+}
+
+.channel-content {
+    padding: 15px 0;
+}
+
+.channel-content>div {
+    padding: 18px 10px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.channel-content .channel-name span {
+    font-weight: bold;
+}
+
+.channel-content i {
+    font-size: 30px;
+}
+
+.active-column {
+    border: 2px solid #2d82d8;
+    border-radius: 5px;
+    color: #ff005c;
+}
+
+
+/* font section  */
+
+.font-title h3 {
+    margin-left: 35px;
+    padding: 0 0 15px 0;
+}
+
+.font-content {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.font-content input {
+    width: 90%;
+    cursor: pointer;
+    /* border: none; */
+}
+
+.font-content span {
+    font-weight: bold;
+}
+
+
+/* template wrapper content */
+
 .template-wrapper {
-    width: 815px;
+    width: 65%;
+    max-width: 815px;
     height: 100%;
-    margin: 20px auto;
+    flex: 2;
+    margin: 0 auto;
     padding: 8px 0;
+    /* border: 1px solid #cacaca;
+    box-shadow: 4px 4px 7px #888; */
+}
+
+.template-container-second {
+    width: 100%;
     border: 1px solid #cacaca;
     box-shadow: 4px 4px 7px #888;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.template-container {
-    width: 90%;
-    margin: 30px auto;
-    /* border: 2px solid green; */
-}
-
-.wrapper-content .col-left .profile-title .profile-img img {
-    width: 100%;
+.wrapper-content-second .col-left-second .profile-title-second .profile-img img {
+    width: 245px;
     height: 245px;
     object-fit: cover;
 }
@@ -29,18 +241,18 @@
     padding: 25px auto;
 }
 
-.template-container .wrapper-content {
+.template-container-second .wrapper-content-second {
     display: flex;
     gap: 50px;
 }
 
-.profile-title {
-    color: #efa71d;
+.profile-title-second {
+    color: #fff;
     padding: 15px 0px;
 }
 
-.col-left {
-    width: 45%;
+.col-left-second {
+    /* width: 45%; */
     padding: 25px;
     /* box-sizing: border-box; */
     background: #e0e0e0;
@@ -60,23 +272,23 @@
     margin: 0 auto;
 }
 
-.col-left .profile-title .profile-name {
+.col-left-second .profile-title-second .profile-name {
     display: flex;
     gap: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
     justify-content: center;
     padding-top: 15px;
-    color: #efa71d;
+    color: #fff;
 }
 
-.col-left .profile-title .profile-job-title {
+.col-left-second .profile-title-second .profile-job-title {
     letter-spacing: 1px;
     text-align: center;
     padding-top: 15px 0;
 }
 
-.col-left .profile-title .profile-job-title h3 {
+.col-left-second .profile-title-second .profile-job-title h3 {
     padding-bottom: 10px;
 }
 
@@ -91,12 +303,13 @@
     display: flex;
     align-items: center;
     align-content: center;
+    justify-content: center;
     gap: 10px;
     margin: 15px auto;
 }
 
 .contact-icon i {
-    color: #efa71d;
+    /* color: #efa71d; */
     font-size: 15px;
 }
 
@@ -159,7 +372,7 @@
 }
 
 .resume-section-content .resume-section-topic span {
-    color: #c78710;
+    /* color: #c78710; */
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 0.8px;
@@ -175,11 +388,17 @@
 
 /* work experience and education section  */
 
-.col-right {
-    width: 60%;
+.col-right-second {
+    /* width: 60%; */
     /* height: 100%; */
     margin-top: -20px;
     padding: 0 0 20px 0;
+}
+
+.blank {
+    width: 10px;
+    /* border: 1px solid red; */
+    height: 10px;
 }
 
 .resume-section-list-tile {
@@ -348,7 +567,7 @@
 }
 
 .print-btn {
-    margin-left: 30%;
+    text-align: right;
 }
 
 .print-btn button {
@@ -356,12 +575,12 @@
     height: auto;
     width: fit-content;
     margin: 20px 0;
-    padding: 15px 35px;
-    font-size: 28px;
+    padding: 12px 35px;
+    font-size: 22px;
     text-transform: uppercase;
     color: white;
     border: none;
-    /* transition: 0.5ms; */
+    transition: 0.5ms;
     border-radius: 5px;
 }
 
@@ -374,7 +593,7 @@
         background: #efa71d !important;
         padding: 5px 0;
     }
-    .print-btn {
-        visibility: hidden;
+    .style-wrapper {
+        display: none;
     }
 }

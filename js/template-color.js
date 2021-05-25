@@ -9,6 +9,7 @@ const listTileTitle = document.querySelectorAll('.list-tile-title');
 const progress = document.querySelectorAll('.progress');
 const starChecked = document.querySelectorAll('.checked');
 const referencePerson = document.querySelectorAll('.reference-person');
+const leftTopWrapper = document.querySelector('.left-top-wrapper');
 
 const colorBlock = document.querySelectorAll('.color-block');
 
@@ -18,7 +19,6 @@ let targetColorTxt;
 
 for (let index = 0; index < colorBlock.length; index++) {
     colorBlock[index].setAttribute('id', index);
-    // console.log(colorBlock[index]);
 }
 
 colorBlock.forEach((block) => {
@@ -27,17 +27,18 @@ colorBlock.forEach((block) => {
         activeColorBlock.classList.remove('active-color-block');
         block.classList.add('active-color-block');
         localStorage.setItem('color-active-block', block.id);
-        // activeCBlock.
-        // style bg 
-        removeColorBg(headerWrapper);
-        removeColorBg(profileTitle);
+
+        if (headerWrapper) removeColorBg(headerWrapper);
+        if (profileTitle) removeColorBg(profileTitle);
+        if (leftTopWrapper) removeColorBg(leftTopWrapper);
         progress.forEach(p => removeColorBg(p));
 
         targetColorBg = block.lastElementChild.classList[1];
 
         localStorage.setItem('active-color-bg', targetColorBg);
-        addColorBg(headerWrapper);
-        addColorBg(profileTitle);
+        if (headerWrapper) addColorBg(headerWrapper);
+        if (profileTitle) addColorBg(profileTitle);
+        if (leftTopWrapper) addColorBg(leftTopWrapper);
         progress.forEach(p => addColorBg(p));
 
         // style color 
@@ -87,8 +88,9 @@ const init = () => {
         colorBlock[6].classList.add('active-color-block');
         // // block.classList.add(activeColorBg);
 
-        addColorBg(headerWrapper);
-        addColorBg(profileTitle);
+        if (headerWrapper) addColorBg(headerWrapper);
+        if (profileTitle) addColorBg(profileTitle);
+        if (leftTopWrapper) addColorBg(leftTopWrapper);
         progress.forEach(p => addColorBg(p));
         addColorTxt(contactIcon);
         addColorTxt(resumeSectionTitleIcon);
@@ -97,8 +99,18 @@ const init = () => {
         addColorTxt(starChecked);
         addColorTxt(referencePerson);
     }
-    if (activeColorBg) headerWrapper.classList.add(activeColorBg)
-    if (activeColorBg) profileTitle.classList.add(activeColorBg);
+    if (activeColorBg) {
+        if (headerWrapper) {
+            headerWrapper.classList.add(activeColorBg);
+        }
+        if (profileTitle) {
+            profileTitle.classList.add(activeColorBg);
+        }
+        if (leftTopWrapper) {
+            leftTopWrapper.classList.add(activeColorBg);
+        }
+    }
+
     if (activeColorBg) progress.forEach(p => p.classList.add(activeColorBg))
     if (activeColorTxt) contactIcon.forEach(icon => icon.classList.add(activeColorTxt));
     if (activeColorTxt) resumeSectionTopic.forEach(icon => icon.classList.add(activeColorTxt));
