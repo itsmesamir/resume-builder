@@ -124,6 +124,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="font-style">
+                    <h2>FONT</h2>
+                    <div class="font-title">
+                        <h3>Font Size</h3>
+                    </div>
+                    <div class="font-content">
+                        <input class="range-slider" type="range" id="range" value="11" min="8" max="13">
+                        <div><span id="range-length">1.1</span></div>
+                    </div>
+                </div>
+                <div class="template-margin-style font-style">
+                    <h2>Margin</h2>
+                    <div class="font-title">
+                        <h3>Margin Scale</h3>
+                    </div>
+                    <div class="font-content">
+                        <input class="margin-range-slider" type="range" id="margin-range" value="2" min="2" max="13">
+                        <div><span id="margin-range-length">20</span></div>
+                    </div>
+                </div>
                 <div class="print-btn">
                     <button id="print">Print CV</button>
                 </div>
@@ -340,11 +360,11 @@
                                     <div class="hobbies-section-content">
                                         <div class="hobbies-name">
                                             <ul>
-                                                <li>Football</li>
-                                                <li>Music</li>
-                                                <li>Literature</li>
-                                                <li>Cricket</li>
-                                                <li>Coding</li>
+                                                <li><span>Football</span></li>
+                                                <li><span>Music</span></li>
+                                                <li><span>Literature</span></li>
+                                                <li><span>Cricket</span></li>
+                                                <li><span>Coding</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -592,8 +612,12 @@
     </div>
     <script src="https://kit.fontawesome.com/14b6efa822.js" crossorigin="anonymous"></script>
     <!-- <script src="../js/test-2.js"></script> -->
+    <script src="../js/constant.js"></script>
     <script src="../js/template-color.js"></script>
     <script src="../js/template-layout.js"></script>
+    <script src="../js/template-col-layout.js"></script>
+    <script src="../js/template-font.js"></script>
+    <script src="../js/template-margin.js"></script>
     <script src="../js/section-drag.js"></script>
 </body>
 

@@ -79,17 +79,19 @@
 /* color section  */
 
 .color-style,
-.channel-column {
+.channel-column,
+.font-style {
     margin-top: 30px;
     border: 1.2px solid #e6e6e6;
     box-shadow: 2px 2px 5px #888;
-    padding: 15px 0;
+    padding: 25px 0;
 }
 
 .color-style h2,
-.channel-column h2 {
+.channel-column h2,
+.font-style h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 15px;
 }
 
 .color-content {
@@ -174,11 +176,37 @@
 }
 
 
+/* font section  */
+
+.font-title h3 {
+    margin-left: 35px;
+    padding: 0 0 15px 0;
+}
+
+.font-content {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.font-content input {
+    width: 90%;
+    cursor: pointer;
+    /* border: none; */
+}
+
+.font-content span {
+    font-weight: bold;
+}
+
+
 /* template wrapper  */
 
 .template-wrapper {
+    width: 60%;
     flex: 2;
-    max-width: 815px;
+    max-width: 850px;
     height: 100%;
     color: #fff;
     padding: 0 25px;
@@ -188,13 +216,16 @@
 
 .header-wrapper {
     /* background: #efa71d; */
-    padding: 5px 0;
+    padding: 25px 0;
 }
 
 .template-container {
-    width: 90%;
-    /* border: 2px solid blue; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
+    padding: 0px 50px;
+    box-sizing: border-box;
 }
 
 .header-content {
@@ -218,6 +249,7 @@
 }
 
 .down-wrapper {
+    /* margin-top: -50px; */
     background: #26303a;
     padding: 25px auto;
 }
@@ -225,16 +257,12 @@
 .down-wrapper .template-container .down-wrapper-content {
     display: flex;
     gap: 70px;
+    padding: 20px 0;
 }
 
 .profile-title {
-    /* background: #efa71d; */
-    margin: 60px auto 40px -40px;
-    padding: 15px 40px;
-}
-
-.col-left {
-    width: 40%;
+    margin: 60px auto 40px -20px;
+    padding: 15px 40px 15px 15px;
 }
 
 .col-left .profile-title .profile-name {
@@ -252,7 +280,7 @@
     height: 10px;
     display: flex;
     flex: 1;
-    width: 400px;
+    width: 100px;
 }
 
 
@@ -456,16 +484,8 @@
     letter-spacing: 1px;
 }
 
-.languages-section-content .languages-rating .checked {
-    /* color: #efa71d; */
-}
-
 
 /* hobbies  */
-
-.hobbies-section-content ul {
-    margin-left: 25px;
-}
 
 .hobbies-name {
     margin-left: 25px;
@@ -518,12 +538,11 @@
     height: auto;
     width: fit-content;
     margin: 20px 0;
-    padding: 15px 35px;
-    font-size: 28px;
-    text-transform: uppercase;
+    padding: 12px 35px;
+    font-size: 22px;
     color: white;
     border: none;
-    /* transition: 0.5ms; */
+    transition: 0.5ms;
     border-radius: 5px;
 }
 

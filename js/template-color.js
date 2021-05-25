@@ -82,7 +82,20 @@ const init = () => {
             }
         })
     } else {
-        colorBlock[6].classList.add('color-active-block');
+        activeColorBg = 'darkOrange-bg';
+        activeColorTxt = 'darkOrange-txt';
+        colorBlock[6].classList.add('active-color-block');
+        // // block.classList.add(activeColorBg);
+
+        addColorBg(headerWrapper);
+        addColorBg(profileTitle);
+        progress.forEach(p => addColorBg(p));
+        addColorTxt(contactIcon);
+        addColorTxt(resumeSectionTitleIcon);
+        addColorTxt(resumeSectionTopic);
+        addColorTxt(listTileTitle);
+        addColorTxt(starChecked);
+        addColorTxt(referencePerson);
     }
     if (activeColorBg) headerWrapper.classList.add(activeColorBg)
     if (activeColorBg) profileTitle.classList.add(activeColorBg);
