@@ -111,6 +111,7 @@ nextBtnNineth.addEventListener("click", function(event) {
 //     }, 800);
 // });
 
+
 prevBtnSec.addEventListener("click", function(event) {
     event.preventDefault();
     slidePage.style.marginLeft = "0%";
@@ -139,7 +140,7 @@ prevBtnFourth.addEventListener("click", function(event) {
 });
 prevBtnFifth.addEventListener("click", function(event) {
     event.preventDefault();
-    slidePage.style.marginLeft = "-30%";
+    slidePage.style.marginLeft = "-30.3%";
     bullet[current - 2].classList.remove("active");
     progressCheck[current - 2].classList.remove("active");
     progressText[current - 2].classList.remove("active");
@@ -148,7 +149,7 @@ prevBtnFifth.addEventListener("click", function(event) {
 
 prevBtnSixth.addEventListener("click", function(event) {
     event.preventDefault();
-    slidePage.style.marginLeft = "-40.2%";
+    slidePage.style.marginLeft = "-40.3%";
     bullet[current - 2].classList.remove("active");
     progressCheck[current - 2].classList.remove("active");
     progressText[current - 2].classList.remove("active");
@@ -156,7 +157,7 @@ prevBtnSixth.addEventListener("click", function(event) {
 });
 prevBtnSeventh.addEventListener("click", function(event) {
     event.preventDefault();
-    slidePage.style.marginLeft = "-50.6%";
+    slidePage.style.marginLeft = "-50.4%";
     bullet[current - 2].classList.remove("active");
     progressCheck[current - 2].classList.remove("active");
     progressText[current - 2].classList.remove("active");
@@ -165,7 +166,7 @@ prevBtnSeventh.addEventListener("click", function(event) {
 
 prevBtnEighth.addEventListener("click", function(event) {
     event.preventDefault();
-    slidePage.style.marginLeft = "-60.8%";
+    slidePage.style.marginLeft = "-60.6%";
     bullet[current - 2].classList.remove("active");
     progressCheck[current - 2].classList.remove("active");
     progressText[current - 2].classList.remove("active");
@@ -173,9 +174,28 @@ prevBtnEighth.addEventListener("click", function(event) {
 });
 prevBtnNineth.addEventListener("click", function(event) {
     event.preventDefault();
-    slidePage.style.marginLeft = "-70.9%";
+    slidePage.style.marginLeft = "-70.6%";
     bullet[current - 2].classList.remove("active");
     progressCheck[current - 2].classList.remove("active");
     progressText[current - 2].classList.remove("active");
     current -= 1;
 });
+prevBtnTenth.addEventListener("click", function(event) {
+    event.preventDefault();
+    slidePage.style.marginLeft = "-80.7%";
+    bullet[current - 2].classList.remove("active");
+    progressCheck[current - 2].classList.remove("active");
+    progressText[current - 2].classList.remove("active");
+    current -= 1;
+
+});
+
+setInterval(() => {
+    localStorage.setItem('current-element', current);
+    console.log(current);
+}, 500);
+
+window.addEventListener('load', () => {
+    let currentElement = localStorage.getItem('current-element');
+    console.log(currentElement);
+})
