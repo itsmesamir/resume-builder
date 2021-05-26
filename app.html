@@ -59,7 +59,7 @@
         <div class="cv-body">
             <div class="form-outer">
                 <form action="#">
-                    <div class="page slide-page">
+                    <div class="page personal-info-section slide-page">
                         <div class="title">
                             Basic Info:
                         </div>
@@ -166,7 +166,7 @@
                             <button class="firstNext next">Next</button>
                         </div>
                     </div>
-                    <div class="page">
+                    <div class="page summary-section">
                         <div class="title">
                             Summary
                         </div>
@@ -181,15 +181,69 @@
                             <button class="next-1 next">Next</button>
                         </div>
                     </div>
-                    <div class="page">
+                    <div class="page work-experience-section">
                         <div class="title">
                             Work Experience:
                         </div>
                         <div class="subtitle">
                             This section is the heart of your resume so make sure you write it well. Start with your current position, then list all the previous positions.
                         </div>
+                        <div class="experience-content">
+                            <div id="add-experience-form">
+                                <div class="row-2">
+                                    <div class="field">
+                                        <div class="label">
+                                            Job Title
+                                        </div>
+                                        <input type="text" id="exp-job-title">
+                                    </div>
+                                    <div class="field">
+                                        <div class="label">
+                                            Company Name
+                                        </div>
+                                        <input type="text" id="exp-company-name">
+                                    </div>
+                                </div>
+                                <div class="row-2">
+                                    <div class="field">
+                                        <div class="label">
+                                            City
+                                        </div>
+                                        <input type="text" id="exp-city">
+                                    </div>
+                                    <div class="field">
+                                        <div class="label">
+                                            Country
+                                        </div>
+                                        <input type="text" id="exp-country">
+                                    </div>
+                                </div>
+                                <div class="row-2">
+                                    <div class="field">
+                                        <div class="label">
+                                            Start Date
+                                        </div>
+                                        <input type="text" id="exp-start-date">
+                                    </div>
+                                    <div class="field">
+                                        <div class="label">
+                                            End Date
+                                        </div>
+
+                                        <input type="Number" style="display: block;" id="exp-end-date">
+                                    </div>
+
+                                </div>
+                                <div class="field" style="width: 91%;">
+                                    <div class="label">
+                                        Job Description
+                                    </div>
+                                    <textarea name="exp-job-desc" id="exp-job-description"></textarea>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card">
-                            <div class="experience-item">
+                            <!-- <div class="experience-item">
                                 <div class="row-2">
                                     <div>
                                         <h4>
@@ -202,117 +256,342 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="add-experience">
                                 <a href="JavaScript:void(0)" class="add-experiene-btn" id="add-experiene-btn">
                                     <i class="fas fa-plus"></i> Add
                                 </a>
                             </div>
                         </div>
-                        <div id="add-experience-form">
-                            <div class="row-2">
-                                <div class="field">
-                                    <div class="label">
-                                        Job Title
+                        <div class="row-3 exp-btns">
+                            <button class="prev-1 prev">Previous</button>
+                            <button id="exp-save">save</button>
+                            <button class="next-1 next">Next</button>
+                        </div>
+                    </div>
+                    <div class="page education-section">
+                        <div class="title">
+                            Education:
+                        </div>
+                        <div class="subtitle">
+                            Add school, college, and universities that you attended. Describe them by adding information about your majors or extracurricular activities.</div>
+                        <div id="add-education-form">
+                            <div class="education-form-content">
+                                <div class="row-2">
+                                    <div class="field">
+                                        <div class="label">
+                                            Field of study
+                                        </div>
+                                        <input type="text" id="edu-field-of-study">
                                     </div>
-                                    <input type="text" id="exp-job-title">
-                                </div>
-                                <div class="field">
-                                    <div class="label">
-                                        Company Name
+                                    <div class="field">
+                                        <div class="label">
+                                            School Name or University
+                                        </div>
+                                        <input type="text" id="edu-school-name">
                                     </div>
-                                    <input type="text" id="exp-company-name">
                                 </div>
-                            </div>
-                            <div class="row-2">
-                                <div class="field">
-                                    <div class="label">
-                                        City
+                                <div class="row-2">
+                                    <div class="field">
+                                        <div class="label">
+                                            City
+                                        </div>
+                                        <input type="text" id="edu-city">
                                     </div>
-                                    <input type="text" id="exp-city">
-                                </div>
-                                <div class="field">
-                                    <div class="label">
-                                        Country
+                                    <div class="field">
+                                        <div class="label">
+                                            Country
+                                        </div>
+                                        <input type="text" id="edu-country">
                                     </div>
-                                    <input type="text" id="exp-country">
                                 </div>
-                            </div>
-                            <div class="row-2">
-                                <div class="field">
-                                    <div class="label">
-                                        Start Date
+                                <div class="row-2">
+                                    <div class="field">
+                                        <div class="label">
+                                            Start Date
+                                        </div>
+                                        <input type="text" id="edu-start-date">
                                     </div>
-                                    <input type="text" id="exp-start-date">
-                                </div>
-                                <div class="field">
-                                    <div class="label">
-                                        End Date
+                                    <div class="field">
+                                        <div class="label">
+                                            End Date
+                                        </div>
+
+                                        <input type="Number" style="display: block;" id="edu-end-date">
                                     </div>
 
-                                    <input type="Number" style="display: block;" id="exp-end-date">
                                 </div>
-
-                            </div>
-                            <div class="field">
-                                <div class="label">
-                                    Job Description
+                                <div class="field" style="width: 87%;">
+                                    <div class="label">
+                                        Description
+                                    </div>
+                                    <textarea name="exp-job-desc" id="edu-description"></textarea>
                                 </div>
-                                <textarea name="exp-job-desc" id="exp-job-description"></textarea>
                             </div>
-                            <div class="row-3">
+                            <div class="card">
+                                <div class="add-education">
+                                    <a href="JavaScript:void(0)" class="add-education-btn" id="add-education-btn">
+                                        <i class="fas fa-plus"></i> Add
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-3 exp-btns">
                                 <button class="prev-1 prev">Previous</button>
                                 <button id="exp-save">save</button>
                                 <button class="next-1 next">Next</button>
                             </div>
                         </div>
-                        <div class="page">
-                            <div class="title">
-                                Date of Birth:
-                            </div>
-                            <div class="field">
-                                <div class="label">
-                                    Date
-                                </div>
-                                <input type="text">
-                            </div>
-                            <div class="field">
-                                <div class="label">
-                                    Gender
-                                </div>
-                                <select>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-                            <div class="field btns">
-                                <button class="prev-2 prev">Previous</button>
-                                <button class="next-2 next">Next</button>
-                            </div>
-                        </div>
                     </div>
-                    <div class="page">
+                    <div class="page lang-tech-section">
                         <div class="title">
-                            Login Details:
+                            Languages & Technologies:
                         </div>
-                        <div class="field">
-                            <div class="label">
-                                Username
+                        <div class="subtitle">
+                            Publish the languages and technologies you which are proficient in.
+                        </div>
+                        <div id="add-lang-tech-form">
+                            <div class="lang-tech-form-content">
+                                <div class="row-1">
+                                    <div class="field" style="width: 100%;">
+                                        <div class="label">
+                                            Header
+                                        </div>
+                                        <input type="text" class="lang-tech-header" placeholder="eg: Database">
+                                    </div>
+                                    <div class="field" style="width: 100%;">
+                                        <div class="label">
+                                            Description
+                                        </div>
+                                        <input type="text" class="lang-tech-description" placeholder="eg: MySQL, Oracle, SQLite">
+                                    </div>
+                                </div>
                             </div>
-                            <input type="text">
-                        </div>
-                        <div class="field">
-                            <div class="label">
-                                Password
+                            <div class="card">
+                                <div class="add-lang-tech">
+                                    <a href="JavaScript:void(0)" class="add-lang-tech-btn" id="add-lang-tech-btn">
+                                        <i class="fas fa-plus"></i> Add
+                                    </a>
+                                </div>
                             </div>
-                            <input type="password">
-                        </div>
-                        <div class="field btns">
-                            <button class="prev-3 prev">Previous</button>
-                            <button class="submit">Submit</button>
+                            <div class="row-3 exp-btns">
+                                <button class="prev-1 prev">Previous</button>
+                                <button id="lang-tech-save">save</button>
+                                <button class="next-1 next">Next</button>
+                            </div>
                         </div>
                     </div>
+                    <div class="page skills-section">
+                        <div class="title">
+                            Skills:
+                        </div>
+                        <div class="subtitle">
+                            Make a list of all the relevant skills for the job that you have and rate how good you are in them. For programming languages and technologies we recommend the Software section. </div>
+                        <div id="add-skills-form">
+                            <div class="skills-form-content">
+                                <div class="row-2">
+                                    <div class="field" style="width: 100%;">
+                                        <div class="label">
+                                            Skill
+                                        </div>
+                                        <input type="text" class="skills-name" placeholder="eg: Flutter">
+                                    </div>
+                                    <div class="field" style="width: 100%;">
+                                        <div class="label">
+                                            Rating (Rate yourself from 1 to 5)
+                                        </div>
+                                        <input type="text" class="skills-rating" placeholder="eg: 3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="add-skills">
+                                    <a href="JavaScript:void(0)" class="add-skills-btn" id="add-skills-btn">
+                                        <i class="fas fa-plus"></i> Add
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-3 exp-btns">
+                                <button class="prev-1 prev">Previous</button>
+                                <button id="lang-tech-save">save</button>
+                                <button class="next-1 next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page languages-section">
+                        <div class="title">
+                            Languages:
+                        </div>
+                        <div class="subtitle">
+                            Publish the languages you which are proficient, Add the languages which you can communicate oral and written effectively
+                        </div>
+                        <div id="add-languages-form">
+                            <div class="languages-form-content">
+                                <div class="row-2">
+                                    <div class="field" style="width: 100%;">
+                                        <div class="label">
+                                            Language
+                                        </div>
+                                        <input type="text" class="languages-name" placeholder="eg: English">
+                                    </div>
+                                    <div class="field" style="width: 100%;">
+                                        <div class="label">
+                                            Rating (Rate yourself from 1 to 5)
+                                        </div>
+                                        <input type="text" class="languages-rating" placeholder="eg: 3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="add-languages">
+                                    <a href="JavaScript:void(0)" class="add-languages-btn" id="add-languages-btn">
+                                        <i class="fas fa-plus"></i> Add
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-3 exp-btns">
+                                <button class="prev-1 prev">Previous</button>
+                                <button id="languages-save">save</button>
+                                <button class="next-1 next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page personal-skills-section">
+                        <div class="title">
+                            Personal Skills:
+                        </div>
+                        <div class="subtitle">
+                            Make a list of all the relevant skills for the job that you have and rate how good you are in them. For programming languages and technologies we recommend the Languages and Technologies section.
+                        </div>
+                        <div id="add-personal-skills-form">
+                            <div class="personal-skills-form-content">
+                                <div class="row-2">
+                                    <div class="field" style="width: 100%;">
+                                        <div class="label">
+                                            Personal Skill
+                                        </div>
+                                        <input type="text" class="personal-skills-name" placeholder="eg: Communication">
+                                    </div>
+                                    <div class="field" style="width: 100%;">
+                                        <div class="label">
+                                            Rating (Rate yourself from 1 to 10)
+                                        </div>
+                                        <input type="text" class="personal-skills-rating" placeholder="eg: 8">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="add-personal-skills">
+                                    <a href="JavaScript:void(0)" class="add-personal-skills-btn" id="add-personal-skills-btn">
+                                        <i class="fas fa-plus"></i> Add
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-3 exp-btns">
+                                <button class="prev-1 prev">Previous</button>
+                                <button id="languages-save">save</button>
+                                <button class="next-1 next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page hobbies-section">
+                        <div class="title">
+                            Hobbies:
+                        </div>
+                        <div class="subtitle">
+                            What you are interested to do.
+                        </div>
+                        <div id="add-hobbies-form">
+                            <div class="hobbies-form-content">
+                                <div class="row-2">
+                                    <div class="field" style="width: 100%;">
+                                        <div class="label">
+                                            Hobby name
+                                        </div>
+                                        <input type="text" class="hobbies-name" placeholder="eg: Travel">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="add-hobbies">
+                                    <a href="JavaScript:void(0)" class="add-hobbies-btn" id="add-hobbies-btn">
+                                        <i class="fas fa-plus"></i> Add
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-3 exp-btns">
+                                <button class="prev-1 prev">Previous</button>
+                                <button id="lang-tech-save">save</button>
+                                <button class="next-1 next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page references-section">
+                        <div class="title">
+                            References:
+                        </div>
+                        <div class="subtitle">
+                            References are a great way to build trust in your resume. References give your experience and achievements credibility.
+                        </div>
+                        <div id="add-references-form">
+                            <div class="references-form-content">
+                                <div class="row-2">
+                                    <div class="field">
+                                        <div class="label">
+                                            Person Name
+                                        </div>
+                                        <input type="text" id="references-person-name">
+                                    </div>
+                                    <div class="field">
+                                        <div class="label">
+                                            Company Name
+                                        </div>
+                                        <input type="text" id="references-company-name">
+                                    </div>
+                                </div>
+                                <div class="row-2">
+                                    <div class="field">
+                                        <div class="label">
+                                            Person Title or Position
+                                        </div>
+                                        <input type="text" id="references-person-position">
+                                    </div>
+                                    <div class="field">
+                                        <div class="label">
+                                            Contact Number
+                                        </div>
+                                        <input type="text" id="references-contact-number">
+                                    </div>
+                                </div>
+                                <div class="row-1">
+                                    <div class="field" style="width: 100%;  padding-bottom: 25px;">
+                                        <div class="label">
+                                            Email
+                                        </div>
+                                        <input type="text" id="references-email">
+                                    </div>
+                                </div>
+                                <div class="field" style="width: 100%;">
+                                    <div class="label">
+                                        Description
+                                    </div>
+                                    <textarea name="exp-job-desc" id="references-description"></textarea>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="add-references">
+                                    <a href="JavaScript:void(0)" class="add-references-btn" id="add-references-btn">
+                                        <i class="fas fa-plus"></i> Add
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-3 exp-btns">
+                                <button class="prev-1 prev">Previous</button>
+                                <button id="exp-save">save</button>
+                                <button class="next-1 next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </form>
             </div>
             <div class="cv-preview">

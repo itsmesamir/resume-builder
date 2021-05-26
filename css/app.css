@@ -303,6 +303,32 @@ form .page .btns button.next {
     padding: 12px;
 }
 
+button:hover {
+    background-color: #000;
+}
+
+.card {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 50px auto auto auto;
+    background: #143d5d;
+    padding: 9px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card:hover {
+    background: #bb7f0f;
+}
+
 
 /* summary section  */
 
@@ -337,9 +363,36 @@ form .page .btns button.next {
     color: red;
 }
 
+.exp-btns {
+    text-align: left;
+    margin-top: 55px;
+    margin-left: -25px;
+}
+
+#add-experience-form {
+    margin-left: 35px;
+}
+
 .add-experiene-btn {
-    margin-top: 10rem;
+    margin-top: 25px;
     font-size: 14pt;
     text-decoration: none;
     color: #d43f8d;
+}
+
+
+/* language and technologies section  */
+
+.lang-tech-form-content .row-1>div {
+    padding-top: 20px;
+}
+
+.lang-tech-form-content .label {
+    margin-top: 35px;
+}
+
+.lang-tech-form-content .row-1 input {
+    /* display: none; */
+    margin-top: 20px;
+    width: 500px;
 }
