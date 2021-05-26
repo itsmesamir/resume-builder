@@ -113,7 +113,7 @@
         <div class="cv-body">
             <div class="form-outer">
                 <form action="#">
-                    <div class="page personal-info-section slide-page d-none">
+                    <div class="page personal-info-section slide-page">
                         <div class="title">
                             Basic Info:
                         </div>
@@ -173,50 +173,33 @@
                         <div class="title">
                             Social Sites
                         </div>
-                        <div class="row-2">
-                            <div class="field">
-                                <div class="label">
-                                    Facebook
+                        <div class="social-site-form-container">
+                            <div class="social-site-form-content form-content-hobbies">
+                                <div class="row-2">
+                                    <div class="field">
+                                        <div class="label">
+                                            Name of Social site
+                                        </div>
+                                        <input type="text" id="info-facebook" placeholder="eg: Facebook" class="social-site-name">
+                                    </div>
+                                    <div class="field">
+                                        <div class="label lang-tech-label">
+                                            <div>Link</div>
+                                            <div class="delete-social-site"><i class="fas fa-minus-circle"></i></div>
+                                        </div>
+                                        <input type="text" id="info-instagram" placeholder="eg: https://www.fb.com/saw.meer.372" class="social-site-rating">
+                                    </div>
                                 </div>
-                                <input type="text" id="info-facebook">
-                            </div>
-                            <div class="field">
-                                <div class="label">
-                                    Instagram
-                                </div>
-                                <input type="text" id="info-instagram">
-                            </div>
-                        </div>
-                        <div class="row-2">
-                            <div class="field">
-                                <div class="label">
-                                    LinkedIn
-                                </div>
-                                <input type="text" id="info-linkedin">
-                            </div>
-                            <div class="field">
-                                <div class="label">
-                                    GitHub
-                                </div>
-                                <input type="text" id="info-github">
                             </div>
                         </div>
-                        <div class="row-2">
-                            <div class="field">
-                                <div class="label">
-                                    Twitter
-                                </div>
-                                <input type="text" id="info-twitter">
-                            </div>
-                            <div class="field">
-                                <div class="label">
-                                    YouTube
-                                </div>
-                                <input type="text" id="info-youtube">
+                        <div class="card" id="add-social-site-btn">
+                            <div class="add-social-site">
+                                <a href="#" class="add-social-site-btn">
+                                    <i class="fas fa-plus"></i> Add
+                                </a>
                             </div>
                         </div>
-
-                        <div class="field">
+                        <div class="field" id="info-btn">
                             <button class="firstNext next">Next</button>
                         </div>
                     </div>
@@ -236,84 +219,71 @@
                             <button class="next-1 next">Next</button>
                         </div>
                     </div>
-                    <div class="page work-experience-section d-none">
+                    <div class="page work-experience-section">
                         <div class="title">
                             Work Experience:
                         </div>
                         <div class="subtitle">
                             This section is the heart of your resume so make sure you write it well. Start with your current position, then list all the previous positions.
                         </div>
-                        <div class="experience-content">
-                            <div id="add-experience-form">
-                                <div class="row-2">
-                                    <div class="field">
-                                        <div class="label">
-                                            Job Title
+                        <div id="add-experience-form">
+                            <div class="experience-form-container">
+                                <div class="experience-form-content form-content-ref">
+                                    <div class="row-2">
+                                        <div class="field">
+                                            <div class="label">
+                                                Job Title
+                                            </div>
+                                            <input type="text" id="experience-job-title" class="experience-rating">
                                         </div>
-                                        <input type="text" id="exp-job-title">
-                                    </div>
-                                    <div class="field">
-                                        <div class="label">
-                                            Company Name
+                                        <div class="field">
+                                            <div class="label lang-tech-label">
+                                                <div>Company Name</div>
+                                                <div class="delete-experience"><i class="fas fa-minus-circle"></i></div>
+                                            </div>
+                                            <input type="text" id="experience-company-name" class="experience-name">
                                         </div>
-                                        <input type="text" id="exp-company-name">
                                     </div>
-                                </div>
-                                <div class="row-2">
-                                    <div class="field">
-                                        <div class="label">
-                                            City
+                                    <div class="row-2">
+                                        <div class="field">
+                                            <div class="label">
+                                                City
+                                            </div>
+                                            <input type="text" id="experience-city">
                                         </div>
-                                        <input type="text" id="exp-city">
-                                    </div>
-                                    <div class="field">
-                                        <div class="label">
-                                            Country
+                                        <div class="field">
+                                            <div class="label">
+                                                Country
+                                            </div>
+                                            <input type="text" id="experience-country">
                                         </div>
-                                        <input type="text" id="exp-country">
                                     </div>
-                                </div>
-                                <div class="row-2">
-                                    <div class="field">
-                                        <div class="label">
-                                            Start Date
+                                    <div class="row-2">
+                                        <div class="field">
+                                            <div class="label">
+                                                Start Date
+                                            </div>
+                                            <input type="text" id="experience-start-date">
                                         </div>
-                                        <input type="text" id="exp-start-date">
-                                    </div>
-                                    <div class="field">
-                                        <div class="label">
-                                            End Date
+                                        <div class="field">
+                                            <div class="label">
+                                                End Date
+                                            </div>
+                                            <input type="text" id="experience-end-date">
                                         </div>
-
-                                        <input type="Number" style="display: block;" id="exp-end-date">
                                     </div>
-
-                                </div>
-                                <div class="field" style="width: 86%;">
-                                    <div class="label">
-                                        Job Description
+                                    <div class="field" style="width: 100%;">
+                                        <div class="label">
+                                            Job Description
+                                        </div>
+                                        <textarea name="experience-job-desc" id="experience-job-description"></textarea>
                                     </div>
-                                    <textarea name="exp-job-desc" id="exp-job-description"></textarea>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <!-- <div class="experience-item">
-                                <div class="row-2">
-                                    <div>
-                                        <h4>
-                                            Laravel Developer |Itahari, Nepal| 2019-Current
-                                        </h4>
-                                    </div>
-                                    <div>
-                                        <a href="" class="delete-experience-btn">
-                                            <i class="fas fa-trash-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
+                        <div class="card" id="add-experience-btn">
                             <div class="add-experience">
-                                <a href="JavaScript:void(0)" class="add-experiene-btn" id="add-experiene-btn">
+                                <a href="#" class="add-experience-btn">
                                     <i class="fas fa-plus"></i> Add
                                 </a>
                             </div>
@@ -331,61 +301,64 @@
                         <div class="subtitle">
                             Add school, college, and universities that you attended. Describe them by adding information about your majors or extracurricular activities.</div>
                         <div id="add-education-form">
-                            <div class="education-form-content">
-                                <div class="row-2">
-                                    <div class="field">
-                                        <div class="label">
-                                            Field of study
+                            <div class="education-form-container">
+                                <div class="education-form-content form-content-ref">
+                                    <div class="row-2">
+                                        <div class="field">
+                                            <div class="label">
+                                                Field of study
+                                            </div>
+                                            <input type="text" id="education-field-of-study" class="education-name">
                                         </div>
-                                        <input type="text" id="edu-field-of-study">
-                                    </div>
-                                    <div class="field">
-                                        <div class="label">
-                                            School Name or University
+                                        <div class="field">
+                                            <div class="label lang-tech-label">
+                                                <div>School Name or University</div>
+                                                <div class="delete-education"><i class="fas fa-minus-circle"></i></div>
+                                            </div>
+                                            <input type="text" id="education-school-name" class="education-rating">
                                         </div>
-                                        <input type="text" id="edu-school-name">
                                     </div>
-                                </div>
-                                <div class="row-2">
-                                    <div class="field">
-                                        <div class="label">
-                                            City
+                                    <div class="row-2">
+                                        <div class="field">
+                                            <div class="label">
+                                                City
+                                            </div>
+                                            <input type="text" id="education-city">
                                         </div>
-                                        <input type="text" id="edu-city">
-                                    </div>
-                                    <div class="field">
-                                        <div class="label">
-                                            Country
+                                        <div class="field">
+                                            <div class="label">
+                                                Country
+                                            </div>
+                                            <input type="text" id="education-country">
                                         </div>
-                                        <input type="text" id="edu-country">
                                     </div>
-                                </div>
-                                <div class="row-2">
-                                    <div class="field">
-                                        <div class="label">
-                                            Start Date
+                                    <div class="row-2">
+                                        <div class="field">
+                                            <div class="label">
+                                                Start Date
+                                            </div>
+                                            <input type="text" id="edu-start-date">
                                         </div>
-                                        <input type="text" id="edu-start-date">
-                                    </div>
-                                    <div class="field">
-                                        <div class="label">
-                                            End Date
+                                        <div class="field">
+                                            <div class="label">
+                                                End Date
+                                            </div>
+
+                                            <input type="text" id="edu-end-date">
                                         </div>
 
-                                        <input type="Number" style="display: block;" id="edu-end-date">
                                     </div>
-
-                                </div>
-                                <div class="field" style="width: 87%;">
-                                    <div class="label">
-                                        Description
+                                    <div class="field" style="width: 100%;">
+                                        <div class="label">
+                                            Description
+                                        </div>
+                                        <textarea name="exp-job-desc" id="edu-description"></textarea>
                                     </div>
-                                    <textarea name="exp-job-desc" id="edu-description"></textarea>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" id="add-education-btn">
                                 <div class="add-education">
-                                    <a href="JavaScript:void(0)" class="add-education-btn" id="add-education-btn">
+                                    <a href="#" class="add-education-btn">
                                         <i class="fas fa-plus"></i> Add
                                     </a>
                                 </div>
@@ -397,7 +370,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="page lang-tech-section">
+                    <div class="page lang-tech-section d-none">
                         <div class="title">
                             Languages & Technologies:
                         </div>
@@ -446,7 +419,7 @@
                             Make a list of all the relevant skills for the job that you have and rate how good you are in them. For programming languages and technologies we recommend the Software section. </div>
                         <div id="add-skills-form">
                             <div class="skills-form-container">
-                                <div class="skills-form-content">
+                                <div class="skills-form-content form-content-hobbies">
                                     <div class="row-2">
                                         <div class="field" style="width: 100%;">
                                             <div class="label skill-header">
@@ -478,7 +451,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="page languages-section">
+                    <div class="page languages-section d-none">
                         <div class="title">
                             Languages:
                         </div>
@@ -487,7 +460,7 @@
                         </div>
                         <div id="add-languages-form">
                             <div class="languages-form-container">
-                                <div class="languages-form-content">
+                                <div class="languages-form-content form-content-hobbies">
                                     <div class="row-2">
                                         <div class="field" style="width: 100%;">
                                             <div class="label">
@@ -519,7 +492,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="page personal-skills-section">
+                    <div class="page personal-skills-section d-none">
                         <div class="title">
                             Personal Skills:
                         </div>
@@ -527,25 +500,28 @@
                             Make a list of all the relevant skills for the job that you have and rate how good you are in them. For programming languages and technologies we recommend the Languages and Technologies section.
                         </div>
                         <div id="add-personal-skills-form">
-                            <div class="personal-skills-form-content">
-                                <div class="row-2">
-                                    <div class="field" style="width: 100%;">
-                                        <div class="label">
-                                            Personal Skill
+                            <div class="personal-skills-form-container">
+                                <div class="personal-skills-form-content form-content-hobbies">
+                                    <div class="row-2">
+                                        <div class="field" style="width: 100%;">
+                                            <div class="label">
+                                                Personal Skill
+                                            </div>
+                                            <input type="text" class="personal-skills-name" placeholder="eg: Communication">
                                         </div>
-                                        <input type="text" class="personal-skills-name" placeholder="eg: Communication">
-                                    </div>
-                                    <div class="field" style="width: 100%;">
-                                        <div class="label">
-                                            Rating (Rate yourself from 1 to 10)
+                                        <div class="field" style="width: 100%;">
+                                            <div class="label lang-tech-label">
+                                                <div>Rating (Rate yourself from 1 to 5)</div>
+                                                <div class="delete-personal-skills"><i class="fas fa-minus-circle"></i></div>
+                                            </div>
+                                            <input type="text" class="personal-skills-rating" placeholder="eg: 8">
                                         </div>
-                                        <input type="text" class="personal-skills-rating" placeholder="eg: 8">
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" id="add-personal-skills-btn">
                                 <div class="add-personal-skills">
-                                    <a href="JavaScript:void(0)" class="add-personal-skills-btn" id="add-personal-skills-btn">
+                                    <a href="#" class="add-personal-skills-btn">
                                         <i class="fas fa-plus"></i> Add
                                     </a>
                                 </div>
@@ -557,7 +533,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="page hobbies-section">
+                    <div class="page hobbies-section d-none">
                         <div class="title">
                             Hobbies:
                         </div>
@@ -565,19 +541,22 @@
                             What you are interested to do.
                         </div>
                         <div id="add-hobbies-form">
-                            <div class="hobbies-form-content">
-                                <div class="row-2">
-                                    <div class="field" style="width: 100%;">
-                                        <div class="label">
-                                            Hobby name
+                            <div class="hobbies-form-container">
+                                <div class="hobbies-form-content form-content-hobbies">
+                                    <div class="row-2">
+                                        <div class="field" style="width: 100%;">
+                                            <div class="label lang-tech-label">
+                                                <div>Hobby name</div>
+                                                <div class="delete-hobbies"><i class="fas fa-minus-circle"></i></div>
+                                            </div>
+                                            <input type="text" class="hobbies-name" placeholder="eg: Travel">
                                         </div>
-                                        <input type="text" class="hobbies-name" placeholder="eg: Travel">
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" id="add-hobbies-btn">
                                 <div class="add-hobbies">
-                                    <a href="JavaScript:void(0)" class="add-hobbies-btn" id="add-hobbies-btn">
+                                    <a href="#" class="add-hobbies-btn">
                                         <i class="fas fa-plus"></i> Add
                                     </a>
                                 </div>
@@ -597,53 +576,56 @@
                             References are a great way to build trust in your resume. References give your experience and achievements credibility.
                         </div>
                         <div id="add-references-form">
-                            <div class="references-form-content">
-                                <div class="row-2">
-                                    <div class="field">
-                                        <div class="label">
-                                            Person Name
+                            <div class="references-form-container">
+                                <div class="references-form-content form-content-ref">
+                                    <div class="row-2">
+                                        <div class="field">
+                                            <div class="label">
+                                                Person Name
+                                            </div>
+                                            <input type="text" id="references-person-name" class="references-name">
                                         </div>
-                                        <input type="text" id="references-person-name">
-                                    </div>
-                                    <div class="field">
-                                        <div class="label">
-                                            Company Name
+                                        <div class="field">
+                                            <div class="label lang-tech-label">
+                                                <div>Company name</div>
+                                                <div class="delete-references"><i class="fas fa-minus-circle"></i></div>
+                                            </div>
+                                            <input type="text" id="references-company-name" class="references-rating">
                                         </div>
-                                        <input type="text" id="references-company-name">
                                     </div>
-                                </div>
-                                <div class="row-2">
-                                    <div class="field">
-                                        <div class="label">
-                                            Person Title or Position
+                                    <div class="row-2">
+                                        <div class="field">
+                                            <div class="label">
+                                                Person Title or Position
+                                            </div>
+                                            <input type="text" id="references-person-position">
                                         </div>
-                                        <input type="text" id="references-person-position">
-                                    </div>
-                                    <div class="field">
-                                        <div class="label">
-                                            Contact Number
+                                        <div class="field">
+                                            <div class="label">
+                                                Contact Number
+                                            </div>
+                                            <input type="text" id="references-contact-number">
                                         </div>
-                                        <input type="text" id="references-contact-number">
                                     </div>
-                                </div>
-                                <div class="row-1">
-                                    <div class="field" style="width: 100%;  padding-bottom: 25px;">
-                                        <div class="label">
-                                            Email
+                                    <div class="row-1">
+                                        <div class="field" style="width: 100%;  padding-bottom: 25px;">
+                                            <div class="label">
+                                                Email
+                                            </div>
+                                            <input type="text" id="references-email">
                                         </div>
-                                        <input type="text" id="references-email">
                                     </div>
-                                </div>
-                                <div class="field" style="width: 100%;">
-                                    <div class="label">
-                                        Description
+                                    <div class="field" style="width: 100%;">
+                                        <div class="label">
+                                            Description
+                                        </div>
+                                        <textarea name="exp-job-desc" id="references-description"></textarea>
                                     </div>
-                                    <textarea name="exp-job-desc" id="references-description"></textarea>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" id="add-references-btn">
                                 <div class="add-references">
-                                    <a href="JavaScript:void(0)" class="add-references-btn" id="add-references-btn">
+                                    <a href="#" class="add-references-btn">
                                         <i class="fas fa-plus"></i> Add
                                     </a>
                                 </div>

@@ -1,14 +1,3 @@
-// default (hide add experience form)
-const addForm = document.getElementById('add-experience-form');
-addForm.classList.add('d-none');
-
-//show experience form
-const showBtn = document.getElementById('add-experiene-btn');
-showBtn.addEventListener('click', function(event) {
-    event.preventDefault();
-    addForm.classList.remove('d-none');
-});
-
 const slidePage = document.querySelector(".slide-page");
 const nextBtnFirst = document.querySelector(".firstNext");
 const prevBtnSec = document.querySelector(".prev-1");

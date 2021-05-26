@@ -33,7 +33,7 @@ const addSubSectionTemplate = (template) => {
         const clonetemplateFormContent = templateFormContent.cloneNode(true);
         templateFormContainer.appendChild(clonetemplateFormContent);
         templateFormContainer.lastElementChild.querySelector(`.${template}-name`).value = '';
-        templateFormContainer.lastElementChild.querySelector(`.${template}-rating`).value = '';
+        if (template !== 'hobbies') templateFormContainer.lastElementChild.querySelector(`.${template}-rating`).value = '';
 
         // check content count after adding
         deletetemplateItem();
@@ -63,6 +63,12 @@ const addSubSectionTemplate = (template) => {
 
 // calling template 
 
+addSubSectionTemplate('social-site');
+addSubSectionTemplate('experience');
+addSubSectionTemplate('education');
 addSubSectionTemplate('lang-tech');
 addSubSectionTemplate('skills');
 addSubSectionTemplate('languages');
+addSubSectionTemplate('personal-skills');
+addSubSectionTemplate('hobbies');
+addSubSectionTemplate('references');

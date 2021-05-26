@@ -76,6 +76,15 @@ body {
     position: relative;
 }
 
+#info-btn {
+    width: 60%;
+    margin: 20px auto;
+}
+
+#info-btn button {
+    margin: 0 auto;
+}
+
 form .page .field .label {
     position: absolute;
     top: -30px;
@@ -407,6 +416,20 @@ button:hover {
     border: 1px solid #dbdbdb;
     margin: 15px;
     padding: 0px 20px 20px 20px;
+    box-shadow: 2px 2px 5px #888;
+}
+
+.form-content-ref {
+    border: 1px solid #dbdbdb;
+    margin: 15px;
+    padding: 50px;
+    box-shadow: 2px 2px 5px #888;
+}
+
+.form-content-hobbies {
+    border: 1px solid #dbdbdb;
+    margin: 15px;
+    padding: 30px;
     box-shadow: 2px 2px 5px #888;
 }
 
