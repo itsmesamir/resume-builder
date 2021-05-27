@@ -208,10 +208,13 @@
     flex: 2;
     max-width: 850px;
     height: 100%;
-    color: #fff;
     padding: 0 25px;
     margin: 0 auto;
     /* border: 2px solid red; */
+}
+
+.template-wrapper-1 {
+    color: #fff;
 }
 
 .header-wrapper {
@@ -226,6 +229,26 @@
     margin: 0 auto;
     padding: 0px 50px;
     box-sizing: border-box;
+}
+
+
+/* template-2 */
+
+.template-container-second {
+    width: 100%;
+    border: 1px solid #cacaca;
+    box-shadow: 4px 4px 7px #888;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.wrapper-content-second .col-left-second .profile-title-second .profile-img img {
+    width: 245px;
+    height: 245px;
+    object-fit: cover;
 }
 
 .header-content {
@@ -254,6 +277,60 @@
     padding: 25px auto;
 }
 
+
+/* template 2  */
+
+.template-container-second .wrapper-content-second {
+    display: flex;
+    gap: 50px;
+}
+
+.profile-title-second {
+    color: #fff;
+    padding: 15px 0px;
+}
+
+.col-left-second {
+    /* width: 45%; */
+    padding: 25px;
+    /* box-sizing: border-box; */
+    background: #e0e0e0;
+}
+
+.left-top-wrapper {
+    background: #404143;
+}
+
+.left-down-wrapper {
+    height: fit-content;
+    padding-bottom: 30px;
+}
+
+.col-left-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.col-left-second .profile-title-second .profile-name {
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    justify-content: center;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.col-left-second .profile-title-second .profile-job-title {
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 15px 0;
+}
+
+.col-left-second .profile-title-second .profile-job-title h3 {
+    padding-bottom: 10px;
+}
+
 .down-wrapper .template-container .down-wrapper-content {
     display: flex;
     gap: 70px;
@@ -276,18 +353,23 @@
     letter-spacing: 1px;
 }
 
-.blank-section {
+
+/* .blank-section {
     height: 10px;
     display: flex;
     flex: 1;
+    border: 1px solid red;
     width: 100px;
-}
+} */
 
 
 /* profile contact details  */
 
 .profile-contact-details {
+    color: #fff;
     margin: 50px auto;
+    padding-bottom: 15px;
+    padding-left: 10px;
 }
 
 .profile-contact-details .profile-contact-details-content {
@@ -327,7 +409,8 @@
 .resume-section-title {
     display: flex;
     gap: 10px;
-    justify-content: left;
+    justify-content: space-between;
+    /* justify-content: left; */
 }
 
 .resume-section-title i {
@@ -335,9 +418,34 @@
     /* color: #efa71d; */
 }
 
+
+/* template-2  */
+
+.section-icon {
+    order: 2;
+}
+
+.section-top-title {
+    order: 1;
+}
+
 .resume-section-title h2 {
     margin-top: -8px;
     letter-spacing: 0.8px;
+}
+
+.left-down-wrapper .resume-section-title h2,
+.col-right-second .resume-section-title h2 {
+    color: #305d52;
+    margin-top: -8px;
+    letter-spacing: 0.8px;
+}
+
+.resume-section .horizontal-line {
+    height: 1.5px;
+    width: 100%;
+    margin-top: 5px;
+    background: #c78710;
 }
 
 .horizontal-line {
@@ -366,6 +474,25 @@
 
 
 /* work experience and education section  */
+
+.col-right-second {
+    /* width: 60%; */
+    height: 100%;
+    margin-top: -20px;
+    padding: 0 0 20px 0;
+}
+
+.blank {
+    width: 10px;
+    height: 10px;
+}
+
+.blank-section {
+    height: 10px;
+    display: flex;
+    flex: 1;
+    width: 100px;
+}
 
 .resume-section-list-tile {
     margin-top: 20px;
@@ -448,22 +575,25 @@
 }
 
 
-/* value of progress  */
+/* template 2 */
 
-
-/* .personal-skills-progress progress.progress::-webkit-progress-value {
-    border-radius: 25px;
-    background-color: #efa71d !important;
+.second-personal-skills .personal-skills-progress progress {
+    width: 100%;
+    height: 7px;
+    border-radius: 20px;
+    background-color: #404143;
+    border: none;
 }
 
-.personal-skills-progress progress.progress::-moz-progress-bar {
-    border-radius: 25px;
-    background-color: #efa71d !important;
+.personal-skills-progress {
+    margin-top: -5px;
 }
 
-.personal-skills-progress progress.progress {
-    color: #efa71d;
-} */
+.second-personal-skills .personal-skills-progress progress::-webkit-progress-bar {
+    background-color: #3d3d3d;
+    border-radius: 20px;
+    width: 100%;
+}
 
 
 /* languages section  */

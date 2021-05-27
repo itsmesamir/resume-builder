@@ -71,8 +71,6 @@ function getsectionAfterDraggingsection(list, yDraggingsection) {
 
         let nextsectionRect = nextsection.getBoundingClientRect();
         let offset = yDraggingsection - nextsectionRect.top - nextsectionRect.height / 2;
-        // console.log('ydragging', yDraggingsection);
-        // console.log('nexttop', nextsectionRect.top);
         if (offset < 0 && offset > closestsection.offset) {
             return {
                 offset,

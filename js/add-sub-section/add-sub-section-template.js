@@ -6,6 +6,16 @@ const addSubSectionTemplate = (template) => {
     const templateName = document.querySelector(`.${template}-name`);
     const templateRating = document.querySelector(`.${template}-rating`);
 
+    // let sections = document.querySelectorAll(``.${template}-form-content');
+    // let lists1 = document.querySelectorAll('.social-site-form-container');
+    // console.log(sections);
+    // console.log(lists1);
+
+
+    let templateFormContentsDrag = document.querySelectorAll(`.${template}-form-content`);
+    let templateFormContainersDrag = document.querySelectorAll(`.${template}-form-container`);
+    subSectionDrag(templateFormContentsDrag, templateFormContainersDrag);
+
     const deletetemplateItem = () => {
         const templateFormContents = document.querySelectorAll(`.${template}-form-content`);
         const deletetemplate = document.querySelectorAll(`.delete-${template}`);
@@ -22,6 +32,11 @@ const addSubSectionTemplate = (template) => {
                         let uploadedtemplateFormContents = document.querySelectorAll(`.${template}-form-content`);
                         let templateCount = uploadedtemplateFormContents.length;
                         localStorage.setItem(`${template}-content-count`, templateCount);
+
+                        templateFormContentsDrag = document.querySelectorAll(`.${template}-form-content`);
+                        templateFormContainersDrag = document.querySelectorAll(`.${template}-form-container`);
+                        subSectionDrag(templateFormContentsDrag, templateFormContainersDrag);
+
                     }
                 })
             })
@@ -41,6 +56,9 @@ const addSubSectionTemplate = (template) => {
         let templateCount = uploadedtemplateFormContents.length;
         localStorage.setItem(`${template}-content-count`, templateCount);
 
+        templateFormContentsDrag = document.querySelectorAll(`.${template}-form-content`);
+        templateFormContainersDrag = document.querySelectorAll(`.${template}-form-container`);
+        subSectionDrag(templateFormContentsDrag, templateFormContainersDrag);
     }
 
     templateAddBtn.addEventListener('click', () => {

@@ -337,6 +337,10 @@ button:hover {
     background-color: #000;
 }
 
+.dragging {
+    opacity: 0.5;
+}
+
 .card {
     width: 150px;
     display: flex;

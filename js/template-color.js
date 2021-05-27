@@ -24,7 +24,7 @@ for (let index = 0; index < colorBlock.length; index++) {
 colorBlock.forEach((block) => {
     block.addEventListener('click', (e) => {
         activeColorBlock = document.querySelector('.active-color-block');
-        activeColorBlock.classList.remove('active-color-block');
+        if (activeColorBlock) activeColorBlock.classList.remove('active-color-block');
         block.classList.add('active-color-block');
         localStorage.setItem('color-active-block', block.id);
 
@@ -75,8 +75,10 @@ const init = () => {
     let activeColorBg = localStorage.getItem('active-color-bg');
     let activeColorTxt = localStorage.getItem('active-color-txt');
     let activeCBlock = localStorage.getItem('color-active-block');
-    if (activeCBlock) {
 
+    if (activeCBlock) {
+        activeColorBlock = document.querySelector('.active-color-block');
+        if (activeColorBlock) activeColorBlock.classList.remove('active-color-block');
         colorBlock.forEach(block => {
             if (block.id == activeCBlock) {
                 block.classList.add('active-color-block');
