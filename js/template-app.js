@@ -9,12 +9,12 @@ previewBtn.addEventListener('click', function() {
 
         //to template1.html
         // window.location.pathname = "/templates/template-1.html";
-        window.open("../templates/template-1.html", 'newWindow');
+        window.open("/resume-builder/templates/template-1.html", 'newWindow');
     } else {
 
         //to template2.html
         // window.location.pathname = "/templates/template-2.html";
-        window.open("../templates/template-2.html", 'newWindow');
+        window.open("/resume-builder/templates/template-2.html", 'newWindow');
 
     }
 
