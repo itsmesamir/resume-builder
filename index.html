@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@100;200;300;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@100;200;300;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -69,14 +71,18 @@
                             <div class="template-title">
                                 <h2>Template One</h2>
                             </div>
-                            <div class="select-btn template-btn-1"><a href="#">Use this template</a></div>
+                            <div class="select-btn template-btn-1"><a href="#" class="template_chooser"
+                                    template="template1">Use this
+                                    template</a></div>
                         </div>
                         <div class="second-template">
                             <img src="./images/resume-template-2.png" alt="resume template">
                             <div class="template-title">
                                 <h2>Template Two</h2>
                             </div>
-                            <div class="select-btn template-btn-2"><a href="#">Use this template</a></div>
+                            <div class="select-btn template-btn-2"><a href="#" class="template_chooser"
+                                    template="template2">Use this
+                                    template</a></div>
                         </div>
                     </div>
                 </div>
@@ -89,28 +95,29 @@
                                         <h1>Contact Information</h1>
                                     </div>
                                     <div class="desc-subtitle">
-                                        <h4>Include your first and last name and at least one way for employee to reach you</h4>
+                                        <h4>Include your first and last name and at least one way for employee to reach
+                                            you</h4>
                                     </div>
                                 </div>
                                 <div class="form-field">
                                     <div class="label">Resume name</div>
-                                    <input type="text" placeholder="Resume Name" name="Resume-name">
+                                    <input type="text" placeholder="Resume Name" name="Resume-name" id="resume-name">
                                 </div>
                                 <div class="form-field">
                                     <div class="label">First Name</div>
-                                    <input type="text" placeholder="First Name" name="First-name">
+                                    <input type="text" placeholder="First Name" name="First-name" id="first-name">
                                 </div>
                                 <div class="form-field">
                                     <div class="label">Last Name</div>
-                                    <input type="text" placeholder="Last Name" name="Last-name">
+                                    <input type="text" placeholder="Last Name" name="Last-name" id="last-name">
                                 </div>
                                 <div class="form-field">
                                     <div class="label">Email Address</div>
-                                    <input type="text" placeholder="Email Address" name="Email-address">
+                                    <input type="text" placeholder="Email Address" name="Email-address" id="email">
                                 </div>
                                 <div class="form-field">
                                     <div class="label">Phone Number</div>
-                                    <input type="number" placeholder="Phone Number" name="Phone-number">
+                                    <input type="number" placeholder="Phone Number" name="Phone-number" id="phone-no">
                                 </div>
                                 <div class="form-field btns">
                                     <button class="prev-1 prev">Previous</button>
@@ -127,17 +134,17 @@
                         </div>
                     </div>
                     <div class="employee-type">
-                        <div class="junior">
+                        <div class="junior single-experience" experience="junior" year="0-2 Years">
                             <div class="emp-icon"><i class="fas fa-user-graduate"></i></div>
                             <div class="emp-title">Student/Junior</div>
                             <div class="years"><span>0-2 Years</span></div>
                         </div>
-                        <div class="senior">
+                        <div class="senior single-experience" experience="senior" year="2-6 Years">
                             <div class="emp-icon"><i class="fas fa-chalkboard-teacher"></i></div>
                             <div class="emp-title">Senior</div>
                             <div class="years"><span>2-6 Years</span></div>
                         </div>
-                        <div class="executive">
+                        <div class="executive single-experience" experience="senior" year="+6 Years">
                             <div class="emp-icon"><i class="fas fa-user-tie"></i></div>
                             <div class="emp-title">Executive</div>
                             <div class="years"><span>+6 Years</span></div>
@@ -145,7 +152,7 @@
                     </div>
                     <div class="form-field btns">
                         <button class="prev-2 prev">Previous</button>
-                        <button class="next-2 next">Submit</button>
+                        <button class="next-2 next submitBtn">Submit</button>
                     </div>
                 </div>
             </div>
@@ -153,6 +160,7 @@
     </div>
     <script src="https://kit.fontawesome.com/14b6efa822.js" crossorigin="anonymous"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/templatesetter.js"></script>
 </body>
 
 </html>
