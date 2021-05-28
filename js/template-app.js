@@ -6,13 +6,15 @@ previewBtn.addEventListener('click', function() {
     //redirect to tempate 
     const template = localStorage.getItem('template');
     if (template == "template1") {
+
         //to template1.html
         // window.location.pathname = "/templates/template-1.html";
-        window.open("/resume-builder/templates/template-1.html", 'newWindow');
+        window.open("../templates/template-1.html", 'newWindow');
     } else {
+
         //to template2.html
         // window.location.pathname = "/templates/template-2.html";
-        window.open("/resume-builder/templates/template-2.html", 'newWindow');
+        window.open("../templates/template-2.html", 'newWindow');
 
     }
 
@@ -30,7 +32,6 @@ function setBasicInfo(data) {
     data.dob = document.getElementById('info-date-of-birth').value;
     data.address = document.getElementById('info-address').value;
 
-
 }
 
 function setBasicInfoForm(data) {
@@ -44,8 +45,6 @@ function setBasicInfoForm(data) {
 
 }
 setBasicInfoForm(basicInfo);
-
-
 
 /* ============================
 * ==============================
