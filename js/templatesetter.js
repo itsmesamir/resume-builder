@@ -92,7 +92,7 @@ Array.prototype.forEach.call(experienceCards, function(card) {
 const submitBtn = document.getElementsByClassName('submitBtn')[0];
 
 submitBtn.addEventListener('click', function(e) {
-
     window.location.pathname = "app.html"
+    console.log('test');
     console.log(window.location.pathname);
 });

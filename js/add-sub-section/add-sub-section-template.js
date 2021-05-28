@@ -45,12 +45,16 @@ const addSubSectionTemplate = (template) => {
     deletetemplateItem();
 
     const clonetemplateContent = () => {
-        const clonetemplateFormContent = templateFormContent.cloneNode(true);
-        templateFormContainer.appendChild(clonetemplateFormContent);
-        templateFormContainer.lastElementChild.querySelector(`.${template}-name`).value = '';
-        if (template !== 'hobbies') templateFormContainer.lastElementChild.querySelector(`.${template}-rating`).value = '';
 
-        // check content count after adding
+        let clonetemplateFormContent;
+        if (templateFormContent) clonetemplateFormContent = templateFormContent.cloneNode(true);
+
+        if (templateFormContent) templateFormContainer.appendChild(clonetemplateFormContent);
+        if (templateFormContent) templateFormContainer.lastElementChild.querySelector(`.${template}-name`).value = '';
+        if (templateFormContent)
+            if (template !== 'hobbies') templateFormContainer.lastElementChild.querySelector(`.${template}-rating`).value = '';
+
+            // check content count after adding
         deletetemplateItem();
         let uploadedtemplateFormContents = document.querySelectorAll(`.${template}-form-content`);
         let templateCount = uploadedtemplateFormContents.length;
@@ -61,14 +65,17 @@ const addSubSectionTemplate = (template) => {
         subSectionDrag(templateFormContentsDrag, templateFormContainersDrag);
     }
 
-    templateAddBtn.addEventListener('click', () => {
+    if (templateAddBtn) {
+        templateAddBtn.addEventListener('click', () => {
 
-        clonetemplateContent();
-    });
+            clonetemplateContent();
+        });
+    }
 
     const loadtemplateContent = () => {
         let templateCount = localStorage.getItem(`${template}-content-count`);
-        if (templateCount === '0') templateFormContainer.removeChild(templateFormContent);
+        if (templateFormContent)
+            if (templateCount === '0') templateFormContainer.removeChild(templateFormContent);
         for (let i = 1; i < templateCount; i++) {
             clonetemplateContent();
         }
