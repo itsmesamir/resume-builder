@@ -2,10 +2,10 @@
 const elem = document.getElementsByClassName('template_chooser');
 
 //through each element of result
-Array.prototype.forEach.call(elem, function (btn) {
+Array.prototype.forEach.call(elem, function(btn) {
 
     // set click event
-    btn.addEventListener('click', function (e) {
+    btn.addEventListener('click', function(e) {
         //get attribute 
         const template = btn.getAttribute('template');
         //set to localstorage
@@ -71,10 +71,10 @@ contactInformationBtn.addEventListener('click', (e) => {
 const experienceCards = document.getElementsByClassName('single-experience');
 
 //through each element of result
-Array.prototype.forEach.call(experienceCards, function (card) {
+Array.prototype.forEach.call(experienceCards, function(card) {
 
     // set click event
-    card.addEventListener('click', function (e) {
+    card.addEventListener('click', function(e) {
         //get attribute 
         const experience_info = {
             'experience': card.getAttribute('experience'),
@@ -91,7 +91,7 @@ Array.prototype.forEach.call(experienceCards, function (card) {
 //submit 
 const submitBtn = document.getElementsByClassName('submitBtn')[0];
 
-submitBtn.addEventListener('click', function (e) {
+submitBtn.addEventListener('click', function(e) {
 
-    window.location.pathname = "/app.html"
+    window.location.pathname = "./app.html"
 });
