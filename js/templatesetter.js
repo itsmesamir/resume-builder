@@ -94,4 +94,5 @@ const submitBtn = document.getElementsByClassName('submitBtn')[0];
 submitBtn.addEventListener('click', function(e) {
 
     window.location.pathname = "./app.html"
+    print(window.location.pathname);
 });
