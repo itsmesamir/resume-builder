@@ -92,6 +92,6 @@ Array.prototype.forEach.call(experienceCards, function(card) {
 const submitBtn = document.getElementsByClassName('submitBtn')[0];
 
 submitBtn.addEventListener('click', function(e) {
-    window.location.pathname = "/app.html"
-        // window.location.pathname = "/resume-builder/app.html"
+    // window.location.pathname = "/app.html"
+    window.location.pathname = "/resume-builder/app.html"
 });
