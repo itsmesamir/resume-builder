@@ -14,9 +14,6 @@ Array.prototype.forEach.call(elem, function(btn) {
 
 });
 
-/*=======================================
-*=======================================
-=========================================*/
 //contact information 
 const contactInformationBtn = document.getElementsByClassName('next-1')[0];
 var basicInfo = {
@@ -40,17 +37,15 @@ function setContactInformation(data) {
     document.getElementById('last-name').value = data.l_name;
     document.getElementById('email').value = data.email;
     document.getElementById('phone-no').value = data.phone_no;
-
 }
+
 if (stored_basicInfo) {
 
     setContactInformation(stored_basicInfo);
 }
 
-
 //click event
 contactInformationBtn.addEventListener('click', (e) => {
-
     //get form data 
     basicInfo.resume_name = document.getElementById('resume-name').value;
     basicInfo.f_name = document.getElementById('first-name').value;
@@ -62,11 +57,7 @@ contactInformationBtn.addEventListener('click', (e) => {
     localStorage.setItem('basicInfo', JSON.stringify(basicInfo))
 });
 
-/*=======================================
-*=======================================
-=========================================*/
 //experience level
-
 //get all experiennce type box
 const experienceCards = document.getElementsByClassName('single-experience');
 
@@ -77,16 +68,13 @@ Array.prototype.forEach.call(experienceCards, function(card) {
     card.addEventListener('click', function(e) {
         //get attribute 
         const experience_info = {
-            'experience': card.getAttribute('experience'),
-            'year': card.getAttribute('year')
-        }
-
-        //set to localstorage
+                'experience': card.getAttribute('experience'),
+                'year': card.getAttribute('year')
+            }
+            //set to localstorage
         localStorage.setItem('experience_info', JSON.stringify(experience_info));
     })
-
 });
-
 
 //submit 
 const submitBtn = document.getElementsByClassName('submitBtn')[0];

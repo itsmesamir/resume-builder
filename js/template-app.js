@@ -15,9 +15,7 @@ previewBtn.addEventListener('click', function() {
         //to template2.html
         // window.location.pathname = "/templates/template-2.html";
         window.open("/resume-builder/templates/template-2.html", 'newWindow');
-
     }
-
 });
 
 //get basic info from localstorage and set to form
@@ -46,13 +44,8 @@ function setBasicInfoForm(data) {
 }
 setBasicInfoForm(basicInfo);
 
-/* ============================
-* ==============================
-================================*/
 //display add social box according to localstorage
 const socialInfoTtl = localStorage.getItem('socialInfo') ? JSON.parse(localStorage.getItem('socialInfo')) : [];
-console.log('ttl');
-console.log(socialInfoTtl);
 
 //get social box parent 
 var socialBoxParent = document.getElementsByClassName('social-site-form-container')[0];
@@ -71,7 +64,6 @@ if (socialInfoTtl.length == 0) {
 //append to parent
 socialBoxParent.innerHTML = socialBoxContent;
 socialBoxContent = "";
-
 
 //save button for basic info and social info
 const saveBasicForm = document.getElementsByClassName('firstNext')[0];
@@ -101,7 +93,6 @@ saveBasicForm.addEventListener('click', () => {
             };
 
             socialInfo.push(social_info);
-
         });
     }
     localStorage.setItem('socialInfo', JSON.stringify(socialInfo));
@@ -109,10 +100,6 @@ saveBasicForm.addEventListener('click', () => {
 
 })
 
-
-/* ============================
-* ==============================
-================================*/
 //get existing summary and display
 const summary = localStorage.getItem('summary') ? localStorage.getItem('summary') : '';
 document.getElementById('summary').value = summary;
@@ -124,14 +111,8 @@ const saveSummaryBtn = document.getElementsByClassName('next-1')[0];
 saveSummaryBtn.addEventListener('click', () => {
     //get summary
     const summary = document.getElementById('summary').value;
-
     localStorage.setItem('summary', summary);
 })
-
-
-/* ============================
-* ==============================
-================================*/
 
 //save button for work experience
 const saveExperience = document.getElementsByClassName('next-2')[0];
@@ -158,18 +139,13 @@ saveExperience.addEventListener('click', () => {
                 end_date: card.querySelector('#experience-end-date').value,
                 description: card.querySelector('#experience-job-description').value,
             }
-
             experiences.push(experience_info);
 
         });
     }
-    console.log(experiences);
     localStorage.setItem('experiences', JSON.stringify(experiences));
 })
 
-/* ============================
-* ==============================
-================================*/
 //save button for education
 const saveEducation = document.getElementsByClassName('next-3')[0];
 
@@ -177,7 +153,6 @@ const saveEducation = document.getElementsByClassName('next-3')[0];
 saveEducation.addEventListener('click', () => {
     localStorage.setItem('educations', []);
     var educations = localStorage.getItem('educations') ? JSON.parse(localStorage.getItem('educations')) : []
-
 
     const parentEducation = document.getElementsByClassName('education-form-container')[0];
     const educationCard = parentEducation.querySelectorAll('.education-form-content');
@@ -196,22 +171,13 @@ saveEducation.addEventListener('click', () => {
                 end_date: card.querySelector('#edu-end-date').value,
                 description: card.querySelector('#edu-description').value,
             }
-
             educations.push(education_info);
-
         });
     }
-    console.log(educations);
 
     localStorage.setItem('educations', JSON.stringify(educations));
-    console.log(educations);
-
-
 })
 
-/* ============================
-* ==============================
-================================*/
 //save button for languages& technologies
 const saveLangTech = document.getElementsByClassName('next-4')[0];
 
@@ -219,7 +185,6 @@ const saveLangTech = document.getElementsByClassName('next-4')[0];
 saveLangTech.addEventListener('click', () => {
     localStorage.setItem('technologies', []);
     var technologies = localStorage.getItem('technologies') ? JSON.parse(localStorage.getItem('technologies')) : []
-
 
     const parentTech = document.getElementsByClassName('lang-tech-form-container')[0];
     const techCard = parentTech.querySelectorAll('.lang-tech-form-content');
@@ -233,20 +198,13 @@ saveLangTech.addEventListener('click', () => {
                 header: card.querySelector('.lang-tech-name').value,
                 description: card.querySelector('.lang-tech-description').value,
             }
-
             technologies.push(tech_info);
-
         });
     }
 
-    console.log(technologies);
     localStorage.setItem('technologies', JSON.stringify(technologies));
-
 });
 
-/* ============================
-* ==============================
-================================*/
 //save button for skills
 const saveSkill = document.getElementsByClassName('next-5')[0];
 
@@ -254,7 +212,6 @@ const saveSkill = document.getElementsByClassName('next-5')[0];
 saveSkill.addEventListener('click', () => {
     localStorage.setItem('skills', []);
     var skills = localStorage.getItem('skills') ? JSON.parse(localStorage.getItem('skills')) : []
-
 
     const parentSkill = document.getElementsByClassName('skills-form-container')[0];
     const skillCard = parentSkill.querySelectorAll('.skills-form-content');
@@ -268,20 +225,12 @@ saveSkill.addEventListener('click', () => {
                 skill: card.querySelector('.skills-name').value,
                 rating: card.querySelector('.skills-rating').value,
             }
-
             skills.push(skill_info);
-
         });
     }
-
-    console.log(skills);
     localStorage.setItem('skills', JSON.stringify(skills));
 });
 
-
-/* ============================
-* ==============================
-================================*/
 //save button for languages
 const saveLanguage = document.getElementsByClassName('next-6')[0];
 
@@ -290,12 +239,10 @@ saveLanguage.addEventListener('click', () => {
     localStorage.setItem('languages', []);
     var languages = localStorage.getItem('languages') ? JSON.parse(localStorage.getItem('languages')) : []
 
-
     const parentLanguage = document.getElementsByClassName('languages-form-container')[0];
     const languageCard = parentLanguage.querySelectorAll('.languages-form-content');
 
     if (languageCard.length > 0) {
-
         //through all card
         Array.prototype.forEach.call(languageCard, function(card) {
             //find languagea value
@@ -303,19 +250,13 @@ saveLanguage.addEventListener('click', () => {
                 language: card.querySelector('.languages-name').value,
                 rating: card.querySelector('.languages-rating').value,
             }
-
             languages.push(language_info);
-
         });
     }
 
-    console.log(languages);
     localStorage.setItem('languages', JSON.stringify(languages));
 });
 
-/* ============================
-* ==============================
-================================*/
 //save button for personal skills
 const savePersonalSkills = document.getElementsByClassName('next-7')[0];
 
@@ -323,7 +264,6 @@ const savePersonalSkills = document.getElementsByClassName('next-7')[0];
 savePersonalSkills.addEventListener('click', () => {
     localStorage.setItem('personalSkills', []);
     var personalSkills = localStorage.getItem('personalSkills') ? JSON.parse(localStorage.getItem('personalSkills')) : []
-
 
     const parentPersonal = document.getElementsByClassName('personal-skills-form-container')[0];
     const personalCard = parentPersonal.querySelectorAll('.personal-skills-form-content');
@@ -337,19 +277,12 @@ savePersonalSkills.addEventListener('click', () => {
                 skill: card.querySelector('.personal-skills-name').value,
                 rating: card.querySelector('.personal-skills-rating').value,
             }
-
             personalSkills.push(personal_skill_info);
-
         });
     }
-
-    console.log(personalSkills);
     localStorage.setItem('personalSkills', JSON.stringify(personalSkills));
 });
 
-/* ============================
-* ==============================
-================================*/
 //save button for hobby
 const saveHobby = document.getElementsByClassName('next-8')[0];
 
@@ -357,7 +290,6 @@ const saveHobby = document.getElementsByClassName('next-8')[0];
 saveHobby.addEventListener('click', () => {
     localStorage.setItem('hobbies', []);
     var hobbies = localStorage.getItem('hobbies') ? JSON.parse(localStorage.getItem('hobbies')) : []
-
 
     const parentHobby = document.getElementsByClassName('hobbies-form-container')[0];
     const hobbyCard = parentHobby.querySelectorAll('.hobbies-form-content');
@@ -370,20 +302,11 @@ saveHobby.addEventListener('click', () => {
             const hobby_info = {
                 name: card.querySelector('.hobbies-name').value,
             }
-
             hobbies.push(hobby_info);
-
         });
     }
-
-    console.log(hobbies);
     localStorage.setItem('hobbies', JSON.stringify(hobbies));
 });
-
-
-/* ============================
-* ==============================
-================================*/
 
 //save button for reference
 const saveReference = document.getElementsByClassName('next-9')[0];
@@ -394,7 +317,6 @@ saveReference.addEventListener('click', (e) => {
 
     localStorage.setItem('reference', []);
     var reference = localStorage.getItem('reference') ? JSON.parse(localStorage.getItem('reference')) : []
-
     var reference_info = {
         person_name: document.querySelector('#references-person-name').value,
         company_name: document.querySelector('#references-company-name').value,
@@ -403,22 +325,18 @@ saveReference.addEventListener('click', (e) => {
         email: document.querySelector('#references-email').value,
         description: document.querySelector('#references-description').value,
     }
-
     reference.push(reference_info)
 
-
-    console.log(reference);
     localStorage.setItem('reference', JSON.stringify(reference));
 
     //redirect to tempate
     const template = localStorage.getItem('template');
-    console.log('click');
     if (template == "template1") {
         //to template1.html
-        window.location.pathname = "/templates/template-1.html";
+        window.location.pathname = "/resume-builder/templates/template-1.html";
+
     } else {
         //to template2.html
-        window.location.pathname = "/templates/template-2.html";
-
+        window.location.pathname = "/resume-builder/templates/template-2.html";
     }
 });
